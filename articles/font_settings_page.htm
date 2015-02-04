@@ -1,5 +1,75 @@
-<h1></h1>
+<h1>Font Settings Page</h1>
 
 <p>
+<b>Font Name </b>will be used when exporting your font.
+</p>
 
+<p>
+<b>Character Proportions</b> deal
+with global attributes that affect your font. Glyphr Studio uses the
+properties in the Font Settings section to display and edit shapes:
+</p>
+
+<ul>
+<li>
+Key Metrics - Characters have a total height of 1000 Units,
+called Em Units. The baseline of that character splits the upper and lower
+portions of the character vertically. Input an Ascent Height, and the Descent
+Height will be calculated automatically. X Height and Cap Height are common
+guides for lowercase and uppercase letters in your font. Note: these metrics
+may be used to scale imported SVG outlines.
+</li>
+<li>
+Default Side Bearing - All characters have a small amount of
+space to their left and right that separates them from another characters. Individual
+Side Bearings can be edited in the Attributes Panel of that character. But, to
+make things easier, if a specific Left or Right Side Bearing is not set, this
+Default Side Bearing will be applied.
+</li>
+</ul>
+
+<h2>
+Grids and Guides
+</h2>
+
+<ul>
+<li>
+Grid System - Divide your Em square into a specified number of
+sub-units. This will show up as a light gray grid behind your character
+editing canvas.
+</li>
+<li>
+Overshoot - Round characters are usually slightly larger than
+their square counterparts so that they visually look the same size. Specify an
+overshoot measurement here. Note: this metric may be used to scale imported
+SVG outlines.
+</li>
+</ul>
+
+
+<h2>
+Character Ranges
+</h2>
+
+<ul>
+<li>
+Standard Character Ranges are a list of the four basic
+Latin character ranges that can be specified for fonts. These common ranges
+can be enabled or disabled with a checkbox, and their Unicode range values will
+automatically be added to your Glyphr Studio project.
+</li>
+<li>
+Custom Character Ranges can also be added to projects. If
+you want to design characters that don't fall into the common Latin character
+ranges above, you can specify a new range here. You'll have to look up the
+starting and ending Unicode values for the range you want to work with.
+</li>
+</ul>
+
+
+<p>
+<b>Font Metadata </b>is a set of
+information that describes your font in various ways, and specifies some extra
+options - like underline and strikethrough attributes. These attributes are
+exported with your SVG font. 
 </p>

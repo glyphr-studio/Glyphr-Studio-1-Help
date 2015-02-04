@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 		'#Overview',
 		'starting_a_new_project',
 		'navigation_and_layout',
-		'common_character_editing_pages',
+		'character_editing_pages',
 		
 		'#Editing',
 		'shape_editing',
@@ -42,15 +42,17 @@ module.exports = function(grunt) {
 		man = manifest[i];
 
 		if(man.charAt(0) === '#'){
-			nav += '<h1>'+man.substr(1)+'</h1>\n';
+			nav += '\t\t\t<h1>'+man.substr(1)+'</h1>\n';
 		} else {
-			nav += '<a href="'+man+'.html">'+man.replace(/_/gi, ' ')+'</a>\n';
+			nav += '\t\t\t<a href="'+man+'.html">'+man.replace(/_/gi, ' ')+'</a>\n';
 		}
 	}
 
 	var bannerhtml = grunt.file.read('page_pieces/top.htm');
 	bannerhtml = bannerhtml.replace(/{{nav}}/, nav);
-	var footerhtml = grunt.file.read('page_pieces/bottom.htm');
+	bannerhtml += '\n\n';
+	var footerhtml = '\n\n';
+	footerhtml += grunt.file.read('page_pieces/bottom.htm');
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
