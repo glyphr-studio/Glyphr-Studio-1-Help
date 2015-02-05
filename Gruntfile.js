@@ -6,9 +6,9 @@ module.exports = function(grunt) {
 
 	var manifest = [
 		'#Overview',
+		'welcome',
 		'starting_a_new_project',
 		'navigation_and_layout',
-		'character_editing_pages',
 
 		'#Editing',
 		'shape_editing',
@@ -24,6 +24,8 @@ module.exports = function(grunt) {
 		'guides_panel',
 
 		'#Pages',
+		'character_edit_page',
+		'linked_shapes_page',
 		'ligatures_page',
 		'kerning_page',
 		'test_drive_page',
@@ -43,6 +45,8 @@ module.exports = function(grunt) {
 
 		if(man.charAt(0) === '#'){
 			nav += '\t\t\t<h1>'+man.substr(1)+'</h1>\n';
+		} else if (man === 'welcome') {
+			nav += '\t\t\t<a href="index.html">welcome</a>\n';
 		} else {
 			nav += '\t\t\t<a href="'+man+'.html">'+man.replace(/_/gi, ' ')+'</a>\n';
 		}
