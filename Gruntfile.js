@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 		'starting_a_new_project',
 		'navigation_and_layout',
 		'character_editing_pages',
-		
+
 		'#Editing',
 		'shape_editing',
 		'canvas_tools',
@@ -57,26 +57,42 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		concat: {
-			options: {
-				banner: bannerhtml,
-				footer: footerhtml
-			},
 			build: {
 				files: [{
 					expand: true,		// Enable dynamic expansion.
 					cwd: 'articles/',	// Src matches are relative to this path.
 					src: ['*.htm'],		// Actual pattern(s) to match.
 					dest: 'build/',		// Destination path prefix.
-					ext: '.html',		// Dest filepaths will have this extension.
-					extDot: 'first'		// Extensions in filenames begin after the first dot
-				}]
+					ext: '.html'		// Dest filepaths will have this extension.
+				}],
+				options: {
+					banner: bannerhtml,
+					footer: footerhtml
+				}
+			}
+		},
+		copy: {
+			build: {
+				files: [
+					{
+						expand: true,
+						cwd: 'articles/img/',
+						src: ['*.png'],
+						dest: 'build/img/'
+					},
+					{
+						src: 'page_pieces/glyphr-studio-help-style.css',
+						dest: 'build/glyphr-studio-help-style.css'
+					}
+				]
 			}
 		}
 	});
 
 	// Load the plugins
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	// Tasks
-	grunt.registerTask('default', ['concat']);
+	grunt.registerTask('default', ['concat', 'copy']);
 };
