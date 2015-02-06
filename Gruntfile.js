@@ -18,6 +18,7 @@ module.exports = function(grunt) {
 
 		'#Panels',
 		'character_panel',
+		'layer_panel',
 		'shape_panel',
 		'path_point_panel',
 		'linked_shape_instance_panel',
