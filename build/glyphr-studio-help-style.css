@@ -61,6 +61,11 @@ a:hover {
 	color:rgb(0,63,95);
 }
 
+.navarea h2 {
+	font-size: .8em;
+	margin:0px 0px 8px 0px;
+}
+
 .navarea a, 
 .navarea a:visited,
 .navarea a:active {

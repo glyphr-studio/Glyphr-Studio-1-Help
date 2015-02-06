@@ -17,11 +17,13 @@ module.exports = function(grunt) {
 		'keyboard_shortcuts',
 
 		'#Panels',
-		'character_panel',
+		'character_chooser_panel',
 		'layer_panel',
-		'shape_panel',
-		'path_point_panel',
-		'linked_shape_instance_panel',
+		'attributes_panel',
+		'--character_panel',
+		'--shape_panel',
+		'--path_point_panel',
+		'--linked_shape_instance_panel',
 		'edit_history_panel',
 		'guides_panel',
 
@@ -45,12 +47,19 @@ module.exports = function(grunt) {
 	for (var i = 0; i < manifest.length; i++) {
 		man = manifest[i];
 
-		if(man.charAt(0) === '#'){
+		if(man.charAt(0) === '#' && man.charAt(1) !== '#'){
 			nav += '\t\t\t<h1>'+man.substr(1)+'</h1>\n';
+		} else if (man.substr(0,2) === '##'){
+			nav += '\t\t\t<h2>'+man.substr(2).replace(/_/gi, ' ')+'</h2>\n';
 		} else if (man === 'welcome') {
 			nav += '\t\t\t<a href="index.html">welcome</a>\n';
 		} else {
-			nav += '\t\t\t<a href="'+man+'.html">'+man.replace(/_/gi, ' ')+'</a>\n';
+			if(man.substr(0,2) === '--') {
+				man = man.substr(2);
+				nav += '\t\t\t<a style="margin-left:8px;" href="'+man+'.html">'+man.replace(/_/gi, ' ')+'</a>\n';
+			} else {
+				nav += '\t\t\t<a href="'+man+'.html">'+man.replace(/_/gi, ' ')+'</a>\n';
+			}
 		}
 	}
 
