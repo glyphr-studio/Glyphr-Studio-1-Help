@@ -46,45 +46,28 @@
 		<td class="articlearea">
 			<div class="article">
 
-<h1>Path Point - Attributes Panel</h1>
+<h1>Unicode</h1>
+
 <p>
-(Character Edit, Ligatures, and Linked Shape Pages)
+<a href="https://en.wikipedia.org/wiki/Unicode" target=_new>Unicode</a> is a format used by fonts that assigns an ID number to every character.  For the most part, fonts deal with what is called the Basic Multilingual Plane, the part of Unicode that represents characters used for writing.  Here is a good overview of how <a href="https://en.wikipedia.org/wiki/List_of_Unicode_characters" target=_new>characters map to Unicode values</a>.
+</p>
+
+<p>
+Glyphr Studio uses this format for importing fonts, and for identifying characters, kern pairs, and ligatures. Glyphr Studio accepts three flavors of this ID number: 
 </p>
 
 <ul>
-<li>
-Selected Point - Displays which point
-is currently selected. 0 is the first Path Point.
-</li>
-<li>
-Point Type - Each Path Point has two
-handles that control the curve of the path before and after it. There are three
-kinds of Point Types: Corner (Handles can be anywhere), Flat (Handles will be
-in line with each other), and Symmetric (Handles will be in-line with each
-other and equidistant from the Path Point).
-</li>
-<li>
-Point X / Point Y - The Path Point's coordinates. These
-attributes are set in Em Units. These attributes are lockable.
-<li>
-Use Handle 1 / Use Handle 2 - Deselecting
-the checkbox by the handle title will remove the handle, such that it will not
-impact the curvature of the path. These options are only available for Flat
-and Corner point types.
-</li>
-<li>
-Handle 1 X/Y &amp; Handle 2 X/Y - The
-Handle's
-coordinates. These attributes are set in Em Units. These attributes are
-lockable.
-</li>
-<li>
-Handle 1 Angle / Handle 2 Angle - read-only
-degree of the handle away from an imaginary horizontal line drawn through the
-point. Zero degrees is to the left, 180 degrees to the right.
-</li>
+	<li><b>Decimal Numbers</b> - for example, the number 78 corresponds to capital N.</li>
+	<li><b>Hexadecimal Numbers</b> - a base-16 number with a 0x prefix. For example, 0x4E corresponds to capital N.</li>
+	<li><b>Unicode Numbers</b> - a base-16 number with a U+ prefix. For example, U+4E corresponds to capital N.</li>
 </ul>
 
+<p>
+When you input any of these numbers, Glyphr Studio will validate the number, and convert it to a four digit hex format (like 0x004E). 
+</p>
+
+<p><b>Note:</b> Glyphr Studio is limited to the Basic Multilingual Plane, Unicode U+0000 through U+FFFF.  Unicode range notation is not supported.
+</p>
 
 			</div>
 		</td>

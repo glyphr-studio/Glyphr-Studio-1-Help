@@ -9,6 +9,7 @@ module.exports = function(grunt) {
 		'welcome',
 		'starting_a_new_project',
 		'navigation_and_layout',
+		'unicode',
 
 		'#Editing',
 		'shape_editing',

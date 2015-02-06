@@ -8,6 +8,7 @@ body {
 	background-color:rgb(229,234,239);
 	padding:0px auto 0px auto;
 	text-align: center;
+	overflow-y: scroll;
 }
 
 h1, h2 {
@@ -43,17 +44,15 @@ a:hover {
 	text-align: left;
 	padding:20px;
 	font-size:2em;
-	background-color: rgb(0,113,170);
-	background-color: transparent;
-	background-color: rgb(20,135,194);
 	margin-bottom: 20px;
+	background-color: rgb(0,113,170);
 }
 
 .navarea {
 	text-align: left;
 	width:200px;
 	padding:15px 16px 40px 20px;
-	background-color: rgb(250,252,255);
+	background-color: rgb(240,246,250);
 }
 
 .navarea h1 {
@@ -81,8 +80,7 @@ a:hover {
 	padding:25px 0px 15px 36px;
 	font-size: 2em;
 	color:rgb(155,221,255);
-	background-color: rgb(0,140,210);
-	background-color: rgb(0,113,170);
+	background-color: rgb(20,135,194);
 }
 
 .articlearea {
@@ -95,6 +93,7 @@ a:hover {
 	background-color: white;
 	color:rgb(76,81,86);
 	line-height: 1.6em;
+	width:700px;
 }
 
 .article h1 {
@@ -110,32 +109,50 @@ a:hover {
 }
 
 .article p,
-.article ul {
+.article ul,
+.article img {
 	margin-bottom: 20px;
+}
+
+.article img {
+	margin-bottom:20px;
+	border:1px solid rgb(240,246,250);
+}
+
+.article p img {
+	display: inline;
+	margin:0px 20px 20px 0px;
 }
 
 .article ul {
 	padding-left: 20px;
 }
 
+.article li {
+	margin-bottom: 12px;
+}
+
+.articlelink {
+	color:rgb(0,125,73);
+}
+
 .keycol {
 	text-align: right;
 	padding-right:8px;
 	padding-bottom: 20px;
+	width:200px;
 }
 
 .keycallout {
 	display:inline-block;
 	padding:2px 8px 4px 8px;
-	background-color: rgb(250,252,255);
 	background-color: rgb(229,234,239);
 	border-radius: 2px;
 	margin-right: 4px;
 }
 
 .arrow {
-	padding:2px 4px;
-	background-color: rgb(250,252,255);
+	padding:2px 6px;
 	background-color: rgb(229,234,239);
 	border-radius: 2px;
 	width:18px;
