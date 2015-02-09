@@ -98,8 +98,19 @@ module.exports = function(grunt) {
 					{
 						src: 'page_pieces/glyphr-studio-help-style.css',
 						dest: 'build/glyphr-studio-help-style.css'
+					},
+					{
+						src: 'page_pieces/CNAME',
+						dest: 'build/CNAME'
 					}
 				]
+			},
+			deploy: {
+				expand: true,
+				flatten: false,
+				cwd: 'build/',
+				src: '**',
+				dest: '../mattlag.github.io/'
 			}
 		}
 	});
