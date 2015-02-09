@@ -124,6 +124,10 @@ a:hover {
 	border:1px solid rgb(240,246,250);
 }
 
+.article img .noborder {
+	border:1px solid transparent;
+}
+
 .article p img {
 	display: inline;
 	margin:0px 20px 20px 0px;
