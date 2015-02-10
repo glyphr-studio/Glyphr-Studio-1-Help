@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 					expand: true,		// Enable dynamic expansion.
 					cwd: 'articles/',	// Src matches are relative to this path.
 					src: ['*.htm'],		// Actual pattern(s) to match.
-					dest: 'build/',		// Destination path prefix.
+					dest: '/',			// Destination path prefix.
 					ext: '.html'		// Dest filepaths will have this extension.
 				}],
 				options: {
@@ -93,24 +93,13 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'articles/img/',
 						src: ['*.png'],
-						dest: 'build/img/'
+						dest: 'img/'
 					},
 					{
 						src: 'page_pieces/glyphr-studio-help-style.css',
-						dest: 'build/glyphr-studio-help-style.css'
-					},
-					{
-						src: 'page_pieces/CNAME',
-						dest: 'build/CNAME'
+						dest: 'glyphr-studio-help-style.css'
 					}
 				]
-			},
-			deploy: {
-				expand: true,
-				flatten: false,
-				cwd: 'build/',
-				src: '**',
-				dest: '../mattlag.github.io/'
 			}
 		}
 	});
