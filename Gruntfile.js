@@ -110,7 +110,7 @@ module.exports = function(grunt) {
 				flatten: false,
 				cwd: 'build/',
 				src: '**',
-				dest: '../mattlag.github.io/'
+				dest: 'gh-pages/'
 			}
 		}
 	});
