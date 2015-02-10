@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 					expand: true,		// Enable dynamic expansion.
 					cwd: 'articles/',	// Src matches are relative to this path.
 					src: ['*.htm'],		// Actual pattern(s) to match.
-					dest: '/',			// Destination path prefix.
+					dest: '',			// Destination path prefix.
 					ext: '.html'		// Dest filepaths will have this extension.
 				}],
 				options: {

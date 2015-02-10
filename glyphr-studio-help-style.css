@@ -1,0 +1,165 @@
+* {
+	font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background-color:rgb(229,234,239);
+	padding:0px auto 0px auto;
+	text-align: center;
+	overflow-y: scroll;
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+a {
+	color:rgb(0,90,135);
+	text-decoration: none;
+	border-bottom-style:solid;
+	border-bottom-width: 1px;
+}
+
+a:hover {
+	border-bottom-style:dotted;
+}
+
+.wrapper {
+	margin:0px auto;
+	width:1000px;
+}
+
+.bodytable {
+	border-collapse: collapse;
+	width:1000px;
+}
+
+.bodytable td {
+	vertical-align: top;
+}
+
+.navheaderarea {
+	text-align: left;
+	padding:20px;
+	font-size:2em;
+	margin-bottom: 20px;
+	background-color: rgb(0,113,170);
+}
+
+.navarea {
+	text-align: left;
+	width:200px;
+	padding:15px 16px 40px 20px;
+	background-color: rgb(240,246,250);
+}
+
+.navarea h1 {
+	font-size:1.2em;
+	margin:20px 0px 4px 0px;
+	color:rgb(0,63,95);
+}
+
+.navarea h2 {
+	font-size: .8em;
+	margin:0px 0px 8px 0px;
+}
+
+.navarea a, 
+.navarea a:visited,
+.navarea a:active {
+	display:block;
+	font-size:.8em;
+	border:0px;
+	margin:0px 0px 8px 0px;
+	text-decoration: underline;
+}
+
+.navarea a:hover {
+	background-color: white;
+}
+
+.articleheaderarea {
+	text-align: left;
+	padding:25px 0px 15px 36px;
+	font-size: 2em;
+	color:rgb(155,221,255);
+	background-color: rgb(20,135,194);
+}
+
+.articlearea {
+	background-color: transparent;
+}
+
+.article {
+	text-align: left;
+	padding:36px;
+	background-color: white;
+	color:rgb(76,81,86);
+	line-height: 1.6em;
+	width:700px;
+}
+
+.article h1 {
+	margin-bottom: 20px;
+	font-size: 2.2em;
+	color: rgb(127,134,137);
+}
+
+.article h2 {
+	margin-bottom: 8px;
+	font-size: 1.6em;
+	color: rgb(127,134,137);
+}
+
+.article p,
+.article ul,
+.article img {
+	margin-bottom: 20px;
+}
+
+.article img {
+	margin-bottom:20px;
+	border:1px solid rgb(240,246,250);
+}
+
+.article p img {
+	display: inline;
+	margin:0px 20px 20px 0px;
+}
+
+.article ul {
+	padding-left: 20px;
+}
+
+.article li {
+	margin-bottom: 12px;
+}
+
+.articlelink {
+	color:rgb(0,125,73);
+}
+
+.keycol {
+	text-align: right;
+	padding-right:8px;
+	padding-bottom: 20px;
+	width:200px;
+}
+
+.keycallout {
+	display:inline-block;
+	padding:2px 8px 4px 8px;
+	background-color: rgb(229,234,239);
+	border-radius: 2px;
+	margin-right: 4px;
+}
+
+.arrow {
+	padding:2px 6px;
+	background-color: rgb(229,234,239);
+	border-radius: 2px;
+	width:18px;
+	height:18px;
+}
