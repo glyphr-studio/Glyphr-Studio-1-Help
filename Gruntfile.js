@@ -44,9 +44,11 @@ module.exports = function(grunt) {
 
 	// Generate the left hand navigation
 	var nav = '';
+	var url = '';
 	var man = '';
 	for (var i = 0; i < manifest.length; i++) {
-		man = manifest[i];
+		url = manifest[i];
+		man = url.replace(/page_/, '').replace(/panel_/, '').replace(/editing_/, '').replace(/overview_/, '').replace(/_/gi, ' ');
 
 		if(man.charAt(0) === '#' && man.charAt(1) !== '#'){
 			nav += '\t\t\t<h1>'+man.substr(1)+'</h1>\n';
@@ -55,11 +57,12 @@ module.exports = function(grunt) {
 		} else if (man === 'welcome') {
 			nav += '\t\t\t<a href="index.html">welcome</a>\n';
 		} else {
+
 			if(man.substr(0,2) === '--') {
 				man = man.substr(2);
-				nav += '\t\t\t<a style="margin-left:8px;" href="'+man+'.html">'+man.replace(/_/gi, ' ')+'</a>\n';
+				nav += '\t\t\t<a style="margin-left:8px;" href="'+url+'.html">'+man+'</a>\n';
 			} else {
-				nav += '\t\t\t<a href="'+man+'.html">'+man.replace(/_/gi, ' ')+'</a>\n';
+				nav += '\t\t\t<a href="'+url+'.html">'+man+'</a>\n';
 			}
 		}
 	}
