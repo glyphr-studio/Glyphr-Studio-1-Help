@@ -1,0 +1,189 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<title>Glyphr Studio Help</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel='icon' type='image/x-icon' href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUhJREFUeNpiZACBVQ8NgGQ9EDsAsQADfvABiA8AcSNDmPwFRqjm/egaDQTYgJgVzL7w4TcQ/8JmkCML1GYBZI3zTYXANDIAGZB4+h2yQSA99SAXvIcZoMDNwnDeVQIsW3jhPcOGp9/B7ABpToZ+A0Ew23D3C4YHX//AXcGEbHu9Fj9c0YIHXxk+/P4HxiA2SAxZDcwVTMg8kE0gxUg2wAFIDCQHUoMMUAwQYGVi+Ai0ERcAyYHU4DQA5Fx9fjacBmCTQzFg4u3PYCeutxIF0yDbQBhZDB2wIHMarn4E0/mqvBiKQa4DRSF69KIY8D9UDkwzrn7E4CDKgaLwwOsfDA3a/PgNANkCiwGQBmxh8AEtkJmgSRIeBiAbQP5FdgGIDQsDkBpkO1mgGSOAmDBovPYRrgbmM5yZCWQrcmbC4iVwZmKkNDsDBBgAPeaW5sdU9+kAAAAASUVORK5CYII='>
+	<link rel="stylesheet" type="text/css" href="glyphr-studio-help-style.css">
+</head>
+<body>
+<div class="wrapper">
+	<table class="bodytable">
+	<tr>
+		<td class="navheaderarea"><img src="img/glyphr_wordmark_50.png"></td>
+		<td class="articleheaderarea">Help & Documentation</td>
+	</tr>
+	<tr>	
+		<td class="navarea">
+			<h1>Overview</h1>
+			<a href="index.html">welcome</a>
+			<a href="overview_starting_a_new_project.html">overview starting a new project</a>
+			<a href="overview_navigation_and_layout.html">overview navigation and layout</a>
+			<a href="overview_file_formats.html">overview file formats</a>
+			<a href="overview_unicode.html">overview unicode</a>
+			<h1>Editing</h1>
+			<a href="editing_shape_editing.html">editing shape editing</a>
+			<a href="editing_canvas_tools.html">editing canvas tools</a>
+			<a href="editing_keyboard_shortcuts.html">editing keyboard shortcuts</a>
+			<h1>Panels</h1>
+			<a href="panel_character_chooser.html">panel character chooser</a>
+			<a href="panel_layer.html">panel layer</a>
+			<a href="panel_attributes.html">panel attributes</a>
+			<a style="margin-left:8px;" href="panel_character.html">panel character</a>
+			<a style="margin-left:8px;" href="panel_shape.html">panel shape</a>
+			<a style="margin-left:8px;" href="panel_path_point.html">panel path point</a>
+			<a style="margin-left:8px;" href="panel_linked_shape_instance.html">panel linked shape instance</a>
+			<a href="panel_edit_history.html">panel edit history</a>
+			<a href="panel_guides.html">panel guides</a>
+			<h1>Pages</h1>
+			<a href="page_character_edit.html">page character edit</a>
+			<a href="page_linked_shapes.html">page linked shapes</a>
+			<a href="page_ligatures.html">page ligatures</a>
+			<a href="page_kerning.html">page kerning</a>
+			<a href="page_test_drive.html">page test drive</a>
+			<a href="page_font_settings.html">page font settings</a>
+			<a href="page_project_settings.html">page project settings</a>
+			<a href="page_import_svg.html">page import svg</a>
+			<a href="page_export_font.html">page export font</a>
+			<a href="page_about.html">page about</a>
+		</td>
+		<td class="articlearea">
+			<div class="article">
+
+<h1>Import SVG Page</h1>
+
+<h2>Importing</h2>
+
+<p>There are many pieces of design software that allow you to
+create SVG outlines. For example, Adobe Illustrator, or its open-source
+equivalent Inkscape. However you create the vector outlines of your characters,
+you can import them via SVG on this page. 
+</p>
+
+<p>This page is for importing individual outlines to specific
+characters. Importing whole SVG fonts can be done from the initial Open
+Project page.
+</p>
+
+<p>Importing outlines happens one character at a time, and
+could be accomplished thusly:
+</p>
+
+<ul>
+<li>
+Select a character in the selection pane on the left. This will be the destination
+for your imported outlines. 
+</li>
+<li>
+Specify scaling and moving options. Many times your design software coordinate system
+setup won't match Glyphr Studio's coordinate system. Enter the specific height
+metrics for this character (Does it go above the x-height line, or below the
+baseline? Is it a rounded character that has overshoot?) then select Scale and
+Move options. Your character outlines will be re-sized and moved to the
+correct location.
+</li>
+<li>
+If your file is a single character, you can drag and drop it onto the area
+specified. Otherwise, copy and paste the SVG code into the code box. The
+importing will not happen until the Import SVG button is pressed, so you can
+double-check your code before you proceed.
+</li>
+<li>
+Pressing the Import SVG button will parse the SVG code, translate it into Glyphr Studio
+shapes and paths, and insert it into the specified character. There is also a
+button to jump to the Character Edit page for the selected character, and a
+button to clear the code box.
+</li>
+</ul>
+
+
+<h2>Notes about SVG</h2>
+
+<p>
+SVG is a huge language that is
+capable of defining a much larger set of graphic design concepts than are
+needed for font glyph design. As a result, Glyphr Studio ignores much of the
+SVG code that gets imported.
+</p>
+
+<p>
+What Glyphr Studio imports:
+</p>
+
+<ul>
+<li>
+Outline data from the following tags: path, rect, polygon,
+polyline, circle, and ellipse.
+</li>
+<li>
+The following commands from the 'd' attribute in the path tag: Move
+To (Mm), Line To (Ll), Horizontal Line To (Hh), Vertical Line To (Vv), Bezier
+Line To (Cc), Smooth Bezier Line To (Ss), Quadratic Bezier Line To (Qq), Smooth
+Quadratic Bezier Line To (Tt) Close Path (Zz).
+</li>
+</ul>
+
+
+<p>
+What Glyphr Studio ignores:
+</p>
+
+<ul>
+<li>
+The 'line' tag. And, basically any tag not mentioned in the
+previous section.
+</li>
+<li>
+All stroke attributes, like stroke-width. Paths are assumed to
+be outlines of shapes.
+</li>
+<li>
+The Arc To (Aa) path commands in the 'd' attribute
+</li>
+<li>
+The 'g' tag, and all its attributes. Any transformations are
+ignored.
+</li>
+<li>
+The 'svg' tag itself. ViewBox, x, y, width, height attributes
+are all ignored.
+</li>
+</ul>
+
+
+<p>
+Things to keep in mind:
+</p>
+
+<ul>
+<li>
+All lines or paths will be closed by Glyphr Studio. AKA: the
+last point in any path will be connected with the first point.
+</li>
+<li>
+Path direction (or 'winding') is not important in SVG, but it is
+important in glyph design. Winding determines if two overlapping shapes both
+appear filled, or if one 'cuts out' from the other. This can be toggled in the
+Shape Attributes Panel with the 'overlap mode' attribute.
+</li>
+<li>
+Adobe Illustrator artboards don't get exported to SVG. If you're
+importing from Illustrator, and not using the Scale option in Glyphr Studio,
+then imported shapes may end up in a surprising location, like way outside the
+Em square.
+</li>
+<li>
+Some rectangles that have been rotated in Adobe Illustrator
+export as SVG rectangles with a transform applied (which Glyphr Studio
+ignores). You can remedy this by right-clicking the rotated rectangle in
+Illustrator, and selecting “Make Compound Path”.
+</li>
+</ul>
+
+			</div>
+		</td>
+	</tr>
+	</table>
+</div>
+</body>
+</html>
