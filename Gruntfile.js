@@ -60,6 +60,7 @@ module.exports = function(grunt) {
 
 			if(man.substr(0,2) === '--') {
 				man = man.substr(2);
+				url = url.substr(2);
 				nav += '\t\t\t<a style="margin-left:8px;" href="'+url+'.html">'+man+'</a>\n';
 			} else {
 				nav += '\t\t\t<a href="'+url+'.html">'+man+'</a>\n';

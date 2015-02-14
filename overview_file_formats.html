@@ -29,10 +29,10 @@
 			<a href="panel_character_chooser.html">character chooser</a>
 			<a href="panel_layer.html">layer</a>
 			<a href="panel_attributes.html">attributes</a>
-			<a style="margin-left:8px;" href="--panel_character.html">character</a>
-			<a style="margin-left:8px;" href="--panel_shape.html">shape</a>
-			<a style="margin-left:8px;" href="--panel_path_point.html">path point</a>
-			<a style="margin-left:8px;" href="--panel_linked_shape_instance.html">linked shape instance</a>
+			<a style="margin-left:8px;" href="panel_character.html">character</a>
+			<a style="margin-left:8px;" href="panel_shape.html">shape</a>
+			<a style="margin-left:8px;" href="panel_path_point.html">path point</a>
+			<a style="margin-left:8px;" href="panel_linked_shape_instance.html">linked shape instance</a>
 			<a href="panel_edit_history.html">edit history</a>
 			<a href="panel_guides.html">guides</a>
 			<h1>Pages</h1>
@@ -60,25 +60,96 @@
 <h2>Glyphr Studio Project File</h2>
 
 <p>
-
+	This is a text file (.txt) that saves all your Glyphr Studio project settings and font data 
+	together in one spot.  Glyphr Studio Project Files have lots of extra features that help you 
+	design a font, but these features don't necessarily exist in other font file formats.  It's always good 
+	to keep your Glyphr Studio Project File along side your exported font file, so that you can 
+	continue to use these features:
 </p>
 
-<h2>Open Type Fonts</h2>
+<ul>
+	<li>
+		<b>Linked Shapes</b> - these will be un-linked, and turned into normal shape outlines
+		in any exported font.
+	</li>
+	<li>
+		<b>Grid and Guideline Settings</b> - these will not be saved with exported fonts.
+	</li>
+	<li>
+		<b>Kern Groups (Class Based Kerning)</b> - kern groups will be split up into many single 
+		letter pairs.
+	</li>
+	<li>
+		<b>Locked Values</b> - exported font files don't have a concept of locking position or 
+		dimensions of shapes and points.
+	</li>
+	<li>
+		<b>Other Glyphr Studio Settings</b> - nothing from the Project Settings page will be saved 
+		with exported font files.
+	</li>
+</ul>
+
+
+<h2>Open Type and True Type Fonts</h2>
+
+<h3>Importing</h3>
 
 <p>
-
+	Shape outlines and kern values from these fonts will be imported.  As of Glyphr Studio version 
+	one, ligatures cannot be imported. 
 </p>
 
-<h2>True Type Fonts</h2>
+<h3>Exporting</h3>
 
 <p>
-
+	As of Glyphr Studio version one, shape outlines are the only thing that can be exported to 
+	Open Type (.otf) font files.  Kern values and ligatures cannot be exported at this time, but 
+	that will probably change in the future.
 </p>
 
-<h2>SVG</h2>
+<p>
+	Even though you can import True Type (.ttf) and Open Type (.otf) font files, it is only possible 
+	to export Open Type fonts.  Don't worry, Open Type font files are more modern, and you shouldn't 
+	notice any differences.
+</p> 
+
+<h2>SVG Outlines and SVG Fonts</h2>
 
 <p>
+	There are two main ways Glyphr Studio uses SVG.  You can import individual shape outlines to 
+	characters from the <a class='articlelink' href='page_import_svg.html'>Import SVG Page</a>, or you 
+	can load a whole SVG Font to start a project.
+</p>
 
+<h3>SVG Outlines</h3>
+
+<p>
+	Scalable Vector Graphics (SVG) is a file format that has many different features for graphic 
+	design... many more than are needed for font design.  To make things easy, Glyphr Studio can 
+	import some of these SVG shapes, but Glyphr Studio does not have full SVG editing capability 
+	(like Adobe Illustrator or Inkscape).
+</p>
+
+<p>
+	You can read more details about this over at the <a class='articlelink' href='page_import_svg.html'>
+	Import SVG Page</a> article.
+</p>
+
+<h3>SVG Fonts</h3>
+
+<p>
+	So, SVG Fonts have a .svg file suffix, but not all SVG files are SVG Fonts.  It's kind of 
+	confusing.  Glyphr Studio can import and export SVG Fonts, and it can import individual SVG 
+	outlines, but it can't import whole SVG files from the open projects page.
+</p>
+
+<p>
+	SVG Fonts have special &lt;font&gt; and &lt;glyph&gt; information in it that most SVG files do 
+	not.  Glyphr Studio does a check for this if you accidentally try to open a SVG file as 
+	opposed to a SVG Font file.  If you have a SVG file that isn't in the SVG Font file format, 
+	you'll have to create a new project from scratch, and import individual SVG outlines to 
+	specific characters via the <a class='articlelink' href='page_import_svg.html'>
+	Import SVG Page</a>.
 </p>
 
 			</div>
