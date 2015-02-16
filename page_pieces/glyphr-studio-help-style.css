@@ -183,3 +183,13 @@ a:hover {
 	width:18px;
 	height:18px;
 }
+
+.footer {
+	font-size: .8em;
+	color: rgb(178,183,188);
+	padding:36px;
+}
+
+.footer a {
+	color:rgb(153,158,163);
+}

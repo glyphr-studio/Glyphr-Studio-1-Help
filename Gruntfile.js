@@ -73,6 +73,7 @@ module.exports = function(grunt) {
 	bannerhtml += '\n\n';
 	var footerhtml = '\n\n';
 	footerhtml += grunt.file.read('page_pieces/bottom.htm');
+	footerhtml = footerhtml.replace(/<!--UPDATED-->/, 'Last updated ' + (new Date()).toDateString());
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
