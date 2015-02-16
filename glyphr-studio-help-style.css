@@ -108,14 +108,21 @@ a:hover {
 }
 
 .article h2 {
+	margin-top:36px;
 	margin-bottom: 8px;
 	font-size: 1.6em;
 	color: rgb(127,134,137);
 }
 
+.article h3 {
+	font-weight: normal;
+	color:rgb(102,107,112);
+}
+
 .article p,
 .article ul,
-.article img {
+.article img,
+.article table {
 	margin-bottom: 20px;
 }
 
@@ -139,6 +146,19 @@ a:hover {
 
 .articlelink {
 	color:rgb(0,125,73);
+}
+
+.green { color: rgb(0,125,73); }
+
+.red { color: rgb(240,15,54); }
+
+.article table {
+	border-collapse: collapse;
+}
+
+.article td {
+	padding: 4px 18px 12px 0px;
+	border-bottom: 1px solid rgb(204,209,214);
 }
 
 .keycol {

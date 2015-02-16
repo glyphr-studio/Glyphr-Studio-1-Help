@@ -1,9 +1,66 @@
 <h1>File Formats</h1>
 
 <p>
-	Glyphr Studio can import and export a couple different file formats.  Here are some things to 
-	keep in mind.
+	Glyphr Studio can import and export a couple different file formats.
 </p>
+
+<table>
+<tr><td><b>File Format</b></td><td><b>Import</b></td><td><b>Export</b></td></tr>
+<tr>
+	<td>Glyphr Studio<br>Project File</td>
+	<td><span class='green'>All font features</span></td>
+	<td><span class='green'>All font features</span></td>
+</tr>
+<tr>
+	<td>Open Type File</td>
+	<td>
+		<span class='green'>Character Outlines - yes</span><br>
+		<span class='green'>Kern Pairs - yes</span><br>
+		<span class='red'>Ligatures - no</span>
+	</td>
+	<td>
+		<span class='green'>Character Outlines - yes</span><br>
+		<span class='red'>Kern Pairs - no</span><br>
+		<span class='red'>Ligatures - no</span>
+	</td>
+</tr>
+<tr>
+	<td>True Type File</td>
+	<td>
+		<span class='green'>Character Outlines - yes</span><br>
+		<span class='green'>Kern Pairs - yes</span><br>
+		<span class='red'>Ligatures - no</span>
+	</td>
+	<td>
+		<span class='red'>Cannot export .ttf</span>
+	</td>
+</tr>
+<tr>
+	<td>Generic SVG File</td>
+	<td>
+		<span class='green'>
+			Character outlines can be imported to<br>a new project via the Import SVG page.
+		</span><br>
+		<span class='red'>Whole generic .svg files cannot be imported.</span>
+	</td>
+	<td>
+		<span class='red'>Cannot export generic .svg</span>
+	</td>
+<tr>
+	<td>SVG Font File</td>
+	<td>
+		<span class='green'>Character Outlines - yes</span><br>
+		<span class='green'>Kern Pairs - yes</span><br>
+		<span class='green'>Ligatures - yes</span>
+	</td>
+	<td>
+		<span class='green'>Character Outlines - yes</span><br>
+		<span class='green'>Kern Pairs - yes</span><br>
+		<span class='green'>Ligatures - yes</span>
+	</td>
+</tr>
+</tr>
+</table>
 
 <h2>Glyphr Studio Project File</h2>
 
