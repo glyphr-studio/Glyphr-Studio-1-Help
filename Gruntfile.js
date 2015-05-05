@@ -10,6 +10,7 @@ module.exports = function(grunt) {
 		'overview_starting_a_new_project',
 		'overview_navigation_and_layout',
 		'overview_file_formats',
+		'overview_updates',
 		'overview_unicode',
 
 		'#Editing',
@@ -18,19 +19,19 @@ module.exports = function(grunt) {
 		'editing_keyboard_shortcuts',
 
 		'#Panels',
-		'panel_character_chooser',
-		'panel_layer',
+		'panel_chooser',
+		'panel_shapes',
 		'panel_attributes',
-		'--panel_character',
-		'--panel_shape',
-		'--panel_path_point',
-		'--panel_linked_shape_instance',
+		'--panel_attributes_glyph',
+		'--panel_attributes_shape',
+		'--panel_attributes_path_point',
+		'--panel_attributes_component_instance',
 		'panel_edit_history',
 		'panel_guides',
 
 		'#Pages',
-		'page_character_edit',
-		'page_linked_shapes',
+		'page_glyph_edit',
+		'page_components',
 		'page_ligatures',
 		'page_kerning',
 		'page_test_drive',
@@ -48,7 +49,7 @@ module.exports = function(grunt) {
 	var man = '';
 	for (var i = 0; i < manifest.length; i++) {
 		url = manifest[i];
-		man = url.replace(/page_/, '').replace(/panel_/, '').replace(/editing_/, '').replace(/overview_/, '').replace(/_/gi, ' ');
+		man = url.replace(/page_/, '').replace(/panel_attributes_/, '').replace(/panel_/, '').replace(/editing_/, '').replace(/overview_/, '').replace(/_/gi, ' ');
 
 		if(man.charAt(0) === '#' && man.charAt(1) !== '#'){
 			nav += '\t\t\t<h1>'+man.substr(1)+'</h1>\n';

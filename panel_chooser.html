@@ -20,24 +20,25 @@
 			<a href="overview_starting_a_new_project.html">starting a new project</a>
 			<a href="overview_navigation_and_layout.html">navigation and layout</a>
 			<a href="overview_file_formats.html">file formats</a>
+			<a href="overview_updates.html">updates</a>
 			<a href="overview_unicode.html">unicode</a>
 			<h1>Editing</h1>
 			<a href="editing_shape_editing.html">shape editing</a>
 			<a href="editing_canvas_tools.html">canvas tools</a>
 			<a href="editing_keyboard_shortcuts.html">keyboard shortcuts</a>
 			<h1>Panels</h1>
-			<a href="panel_character_chooser.html">character chooser</a>
-			<a href="panel_layer.html">layer</a>
+			<a href="panel_chooser.html">chooser</a>
+			<a href="panel_shapes.html">shapes</a>
 			<a href="panel_attributes.html">attributes</a>
-			<a style="margin-left:8px;" href="panel_character.html">character</a>
-			<a style="margin-left:8px;" href="panel_shape.html">shape</a>
-			<a style="margin-left:8px;" href="panel_path_point.html">path point</a>
-			<a style="margin-left:8px;" href="panel_linked_shape_instance.html">linked shape instance</a>
+			<a style="margin-left:8px;" href="panel_attributes_glyph.html">glyph</a>
+			<a style="margin-left:8px;" href="panel_attributes_shape.html">shape</a>
+			<a style="margin-left:8px;" href="panel_attributes_path_point.html">path point</a>
+			<a style="margin-left:8px;" href="panel_attributes_component_instance.html">component instance</a>
 			<a href="panel_edit_history.html">edit history</a>
 			<a href="panel_guides.html">guides</a>
 			<h1>Pages</h1>
-			<a href="page_character_edit.html">character edit</a>
-			<a href="page_linked_shapes.html">linked shapes</a>
+			<a href="page_glyph_edit.html">glyph edit</a>
+			<a href="page_components.html">components</a>
 			<a href="page_ligatures.html">ligatures</a>
 			<a href="page_kerning.html">kerning</a>
 			<a href="page_test_drive.html">test drive</a>
@@ -50,42 +51,20 @@
 		<td class="articlearea">
 			<div class="article">
 
-<h1>Linked Shapes Page</h1>
+<h1>Chooser Panel</h1>
 
-<img src="img/header_linked_shapes.png"/>
-
-<p>
-	Linked Shapes are shapes that you define once, and can be added to many characters.  If you edit 
-	the original Linked Shape, it also updates in all the characters where it was inserted.  
-</p>
-	
-<p>
-	For example, you could define an 'o' shape, and insert a Linked Shape Instance to the characters 
-	'abdgopq'.  This can help in the beginning phases of font design to rough out common shapes
-	across an entire set of characters.
-</p>
+<p><i>(Glyph Edit, Components, Ligatures, and Import SVG Pages)</i></p>
 
 <p>
-	Editing a Linked Shape uses all the same <a class="articlelink" href="editing_shape_editing.html">shape 
-	editing</a> concepts that characters do, except there is only one shape allowed per Linked Shape.
+	<img src="img/panel_chooser.png">
+	The Chooser Panel displays characters that are available to be selected.  On the
+	Glyph Edit, Components, or Ligatures pages, selecting a glyph from the Chooser Panel will load the 
+	Edit Canvas with whatever glyph you selected.  On the Import SVG page, selecting a 
+	glyph from the Chooser Panel determines where your imported SVG shape outlines will be 
+	placed.
 </p>
 
-<h2>Linking and Un-linking</h2>
 
-<p>
-	Linked Shapes can be added to a character either from the Linked Shapes page, or from the 
-	Character Edit page.  Once you have a Linked Shape Instance in a character, it can be un-linked. 
-	This essentially makes a copy of the original Linked Shape and places it in the character as a 
-	regular shape.  In the later phases of font design, this can be useful for final tweaks.  Many 
-	shapes between characters feel similar, but are slightly different.
-</p>
-
-<p>
-	Alternatively, if you are creating a shape in a character and decide you would like to use it 
-	in other characters as a Linked Shape, you can do so by selecting the shape and selecting the 
-	'turn into a linked shape' action.  This will add a new entry to the Linked Shapes page, and 
-	turn the currently selected shape into a Linked Shape Instance.
-</p>
 
 			</div>
 		</td>
@@ -94,7 +73,7 @@
 		<div class='footer'>
 			Help Documentation for Glyphr Studio v1.00.00<br>
 			For help with other versions, email <a href='mailto:mail@glyphrstudio.com'>mail@glyphrstudio.com</a><br>
-			Last updated Sun Mar 29 2015
+			Last updated Mon May 04 2015
 		</div>
 	</td></tr>
 	</table>

@@ -14,32 +14,36 @@
 <tr>
 	<td>Open Type</td>
 	<td>
-		<span class='green'>Character Outlines - yes</span><br>
-		<span class='green'>Kern Pairs - yes</span><br>
-		<span class='red'>Ligatures - no</span>
+		<span class='green'>Glyph Outlines - yes</span><br>
+		<span class='red'>Components - no</span><br>
+		<span class='red'>Ligatures - no</span><br>
+		<span class='red'>Kern Pairs - no</span>
 	</td>
 	<td>
-		<span class='green'>Character Outlines - yes</span><br>
-		<span class='red'>Kern Pairs - no</span><br>
-		<span class='red'>Ligatures - no</span>
+		<span class='green'>Glyph Outlines - yes</span><br>
+		<span class='red'>Components - no</span><br>
+		<span class='red'>Ligatures - no</span><br>
+		<span class='red'>Kern Pairs - no</span>
 	</td>
 </tr>
 <tr>
 	<td>True Type</td>
 	<td>
-		<span class='green'>Character Outlines - yes</span><br>
-		<span class='green'>Kern Pairs - yes</span><br>
-		<span class='red'>Ligatures - no</span>
+		<span class='green'>Glyph Outlines - yes</span><br>
+		<span class='red'>Components - no</span><br>
+		<span class='red'>Ligatures - no</span><br>
+		<span class='red'>Kern Pairs - no</span>
 	</td>
 	<td>
-		<span class='red'>Cannot export .ttf</span>
+		<span class='red'>Cannot export .ttf</span><br>
+		Imported .ttf files will be<br>exported as .otf
 	</td>
 </tr>
 <tr>
 	<td>Generic SVG</td>
 	<td>
 		<span class='green'>
-			Character outlines can be imported to<br>a new project via the Import SVG page.
+			Glyph outlines can be imported to<br>a new project via the Import SVG page.
 		</span><br>
 		<span class='red'>Whole generic .svg files cannot be imported.</span>
 	</td>
@@ -49,12 +53,12 @@
 <tr>
 	<td>SVG Font</td>
 	<td>
-		<span class='green'>Character Outlines - yes</span><br>
+		<span class='green'>Glyph Outlines - yes</span><br>
 		<span class='green'>Kern Pairs - yes</span><br>
 		<span class='green'>Ligatures - yes</span>
 	</td>
 	<td>
-		<span class='green'>Character Outlines - yes</span><br>
+		<span class='green'>Glyph Outlines - yes</span><br>
 		<span class='green'>Kern Pairs - yes</span><br>
 		<span class='green'>Ligatures - yes</span>
 	</td>
@@ -74,7 +78,7 @@
 
 <ul>
 	<li>
-		<b>Linked Shapes</b> - these will be un-linked, and turned into normal shape outlines
+		<b>Components</b> - these will be un-linked, and turned into normal shape outlines
 		in any exported font.
 	</li>
 	<li>
@@ -100,15 +104,15 @@
 <h3>Importing</h3>
 
 <p>
-	Shape outlines and kern values from these fonts will be imported.  As of Glyphr Studio version 
-	one, ligatures cannot be imported. 
+	Shape outlines from these fonts will be imported.  Kern values, components, and ligatures cannot 
+	be imported. 
 </p>
 
 <h3>Exporting</h3>
 
 <p>
-	As of Glyphr Studio version one, shape outlines are the only thing that can be exported to 
-	Open Type (.otf) font files.  Kern values and ligatures cannot be exported at this time, but 
+	Shape outlines are the only thing that can be exported to Open Type (.otf) font files.  
+	Kern values, components, and ligatures cannot be exported at this time, but 
 	that will probably change in the future.
 </p>
 
@@ -122,7 +126,7 @@
 
 <p>
 	There are two main ways Glyphr Studio uses SVG.  You can import individual shape outlines to 
-	characters from the <a class='articlelink' href='page_import_svg.html'>Import SVG Page</a>, or you 
+	glyphs from the <a class='articlelink' href='page_import_svg.html'>Import SVG Page</a>, or you 
 	can load a whole SVG Font to start a project.
 </p>
 
@@ -153,6 +157,6 @@
 	not.  Glyphr Studio checks for this if you accidentally try to open a SVG file as
 	opposed to a SVG Font file.  If you have a SVG file that isn't in the SVG Font file format, 
 	you'll have to create a new project from scratch, and import individual SVG outlines to 
-	specific characters via the <a class='articlelink' href='page_import_svg.html'>
+	specific glyphs via the <a class='articlelink' href='page_import_svg.html'>
 	Import SVG Page</a>.
 </p>

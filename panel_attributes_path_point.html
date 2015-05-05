@@ -20,24 +20,25 @@
 			<a href="overview_starting_a_new_project.html">starting a new project</a>
 			<a href="overview_navigation_and_layout.html">navigation and layout</a>
 			<a href="overview_file_formats.html">file formats</a>
+			<a href="overview_updates.html">updates</a>
 			<a href="overview_unicode.html">unicode</a>
 			<h1>Editing</h1>
 			<a href="editing_shape_editing.html">shape editing</a>
 			<a href="editing_canvas_tools.html">canvas tools</a>
 			<a href="editing_keyboard_shortcuts.html">keyboard shortcuts</a>
 			<h1>Panels</h1>
-			<a href="panel_character_chooser.html">character chooser</a>
-			<a href="panel_layer.html">layer</a>
+			<a href="panel_chooser.html">chooser</a>
+			<a href="panel_shapes.html">shapes</a>
 			<a href="panel_attributes.html">attributes</a>
-			<a style="margin-left:8px;" href="panel_character.html">character</a>
-			<a style="margin-left:8px;" href="panel_shape.html">shape</a>
-			<a style="margin-left:8px;" href="panel_path_point.html">path point</a>
-			<a style="margin-left:8px;" href="panel_linked_shape_instance.html">linked shape instance</a>
+			<a style="margin-left:8px;" href="panel_attributes_glyph.html">glyph</a>
+			<a style="margin-left:8px;" href="panel_attributes_shape.html">shape</a>
+			<a style="margin-left:8px;" href="panel_attributes_path_point.html">path point</a>
+			<a style="margin-left:8px;" href="panel_attributes_component_instance.html">component instance</a>
 			<a href="panel_edit_history.html">edit history</a>
 			<a href="panel_guides.html">guides</a>
 			<h1>Pages</h1>
-			<a href="page_character_edit.html">character edit</a>
-			<a href="page_linked_shapes.html">linked shapes</a>
+			<a href="page_glyph_edit.html">glyph edit</a>
+			<a href="page_components.html">components</a>
 			<a href="page_ligatures.html">ligatures</a>
 			<a href="page_kerning.html">kerning</a>
 			<a href="page_test_drive.html">test drive</a>
@@ -50,18 +51,42 @@
 		<td class="articlearea">
 			<div class="article">
 
-<h1>Character Chooser Panel</h1>
+<h1>Path Point - Attributes Panel</h1>
 
-<p><i>(Character Edit, Ligatures, and Import SVG Pages)</i></p>
+<p><i>(Glyph Edit, Components, and Ligatures Pages)</i></p>
 
-<p>
-	The Character Chooser Panel displays characters that are available to be selected.  On the
-	Character Edit or Ligatures pages, selecting a character from the Chooser Panel will load the 
-	Edit Canvas with whatever character you selected.  On the Import SVG page, selecting a 
-	character from the Chooser Panel determines where your imported SVG shape outlines will be 
-	placed.
-</p>
-
+<ul>
+	<li>
+		<b>Selected Point</b> - 
+		Displays which point is currently selected. 0 is the first Path Point.
+	</li>
+	<li>
+		<b>Point Type</b> - 
+		Each Path Point has two	handles that control the curve of the path before and after it. 
+		There are three	kinds of Point Types: Corner (Handles can be anywhere), Flat (Handles will be
+		in line with each other), and Symmetric (Handles will be in-line with each
+		other and equidistant from the Path Point).
+	</li>
+	<li>
+		<b>Point X / Point Y</b> - 
+		The Path Point's coordinates. These	attributes are set in Em Units. These attributes are lockable.
+	<li>
+		<b>Use Handle 1 / Use Handle 2</b> - 
+		Deselecting	the checkbox by the handle title will remove the handle, such that it will not
+		impact the curvature of the path. These options are only available for Flat
+		and Corner point types.
+	</li>
+	<li>
+		<b>Handle 1 X/Y &amp; Handle 2 X/Y</b> - 
+		The	Handle's coordinates. These attributes are set in Em Units. These attributes are
+		lockable.
+	</li>
+	<li>
+		<b>Handle 1 Angle / Handle 2 Angle</b> - 
+		read-only degree of the handle away from an imaginary horizontal line drawn through the
+		point. Zero degrees is to the left, 180 degrees to the right.
+	</li>
+</ul>
 
 
 			</div>
@@ -71,7 +96,7 @@
 		<div class='footer'>
 			Help Documentation for Glyphr Studio v1.00.00<br>
 			For help with other versions, email <a href='mailto:mail@glyphrstudio.com'>mail@glyphrstudio.com</a><br>
-			Last updated Sun Mar 29 2015
+			Last updated Mon May 04 2015
 		</div>
 	</td></tr>
 	</table>

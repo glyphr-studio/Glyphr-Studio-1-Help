@@ -132,8 +132,9 @@ a:hover {
 }
 
 .article p img {
-	display: inline;
-	margin:0px 20px 20px 0px;
+	display: inline-block;
+	float:left;
+	margin:6px 26px 0px 0px;
 }
 
 .article ul {
@@ -141,7 +142,7 @@ a:hover {
 }
 
 .article li {
-	margin-bottom: 12px;
+	margin-bottom: 8px;
 }
 
 .articlelink {
@@ -159,6 +160,21 @@ a:hover {
 .article td {
 	padding: 4px 18px 12px 0px;
 	border-bottom: 1px solid rgb(204,209,214);
+}
+
+.update {
+	font-size:1.2em;
+	background-color:rgb(240,246,250);
+	padding:12px 0px 8px 20px;
+	margin:40px 0px 12px 0px;
+	position: relative;
+	left: -20px;
+}
+
+.update b {
+	display:inline-block;
+	width:150px;
+	font-size: 1.8em;
 }
 
 .keycol {

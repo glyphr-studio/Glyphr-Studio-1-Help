@@ -20,24 +20,25 @@
 			<a href="overview_starting_a_new_project.html">starting a new project</a>
 			<a href="overview_navigation_and_layout.html">navigation and layout</a>
 			<a href="overview_file_formats.html">file formats</a>
+			<a href="overview_updates.html">updates</a>
 			<a href="overview_unicode.html">unicode</a>
 			<h1>Editing</h1>
 			<a href="editing_shape_editing.html">shape editing</a>
 			<a href="editing_canvas_tools.html">canvas tools</a>
 			<a href="editing_keyboard_shortcuts.html">keyboard shortcuts</a>
 			<h1>Panels</h1>
-			<a href="panel_character_chooser.html">character chooser</a>
-			<a href="panel_layer.html">layer</a>
+			<a href="panel_chooser.html">chooser</a>
+			<a href="panel_shapes.html">shapes</a>
 			<a href="panel_attributes.html">attributes</a>
-			<a style="margin-left:8px;" href="panel_character.html">character</a>
-			<a style="margin-left:8px;" href="panel_shape.html">shape</a>
-			<a style="margin-left:8px;" href="panel_path_point.html">path point</a>
-			<a style="margin-left:8px;" href="panel_linked_shape_instance.html">linked shape instance</a>
+			<a style="margin-left:8px;" href="panel_attributes_glyph.html">glyph</a>
+			<a style="margin-left:8px;" href="panel_attributes_shape.html">shape</a>
+			<a style="margin-left:8px;" href="panel_attributes_path_point.html">path point</a>
+			<a style="margin-left:8px;" href="panel_attributes_component_instance.html">component instance</a>
 			<a href="panel_edit_history.html">edit history</a>
 			<a href="panel_guides.html">guides</a>
 			<h1>Pages</h1>
-			<a href="page_character_edit.html">character edit</a>
-			<a href="page_linked_shapes.html">linked shapes</a>
+			<a href="page_glyph_edit.html">glyph edit</a>
+			<a href="page_components.html">components</a>
 			<a href="page_ligatures.html">ligatures</a>
 			<a href="page_kerning.html">kerning</a>
 			<a href="page_test_drive.html">test drive</a>
@@ -54,45 +55,48 @@
 
 <h2>Importing</h2>
 
-<p>There are many pieces of design software that allow you to
-create SVG outlines including Adobe Illustrator, or its open-source
-equivalent Inkscape. You can import vector outlines of your characters
-however you create them, on this page.
+<p>
+	There are many pieces of design software that allow you to
+	create SVG outlines including Adobe Illustrator, or its open-source
+	equivalent Inkscape. However you create SVG Vector Outlines, you can 
+	import them on this page.
 </p>
 
-<p>This page is for importing individual outlines to specific
-characters. Importing whole SVG fonts can be done from the initial Open
-Project page.
+<p>
+	This page is for importing individual outlines from code to specific
+	glyphs. Importing whole SVG fonts can be done from the initial Open
+	Project page.
 </p>
 
-<p>Importing outlines happens one character at a time, and
-could be accomplished like this:
+<p>
+	Importing outlines happens one glyph at a time, and
+	could be accomplished like this:
 </p>
 
 <ul>
 <li>
-Select a character in the selection pane on the left. This will be the destination
-for your imported outlines. 
+	Select a glyph in the chooser pane on the left. This will be the destination
+	for your imported outlines. 
 </li>
 <li>
-Specify scaling and moving options. Many times your design software coordinate system
-setup won't match Glyphr Studio's coordinate system. Enter the specific height
-metrics for this character (Does it go above the x-height line, or below the
-baseline? Is it a rounded character that has overshoot?) then select Scale and
-Move options. Your character outlines will be re-sized and moved to the
-correct location.
+	Specify scaling and moving options. Many times your design software coordinate system
+	setup won't match Glyphr Studio's coordinate system. Enter the specific height
+	metrics for this glyph (Does it go above the x-height line, or below the
+	baseline? Is it a rounded glyph that has overshoot?) then select Scale and
+	Move options. Your glyph outlines will be re-sized and moved to the
+	correct location.
 </li>
 <li>
-If your file is a single character, you can drag and drop it onto the area
-specified. Otherwise, copy and paste the SVG code into the code box. The
-importing will not happen until the Import SVG button is pressed, so you can
-double-check your code before you proceed.
+	If your file is a single glyph, you can drag and drop it onto the area
+	specified. Otherwise, copy and paste the SVG code into the code box. The
+	importing will not happen until the Import SVG button is pressed, so you can
+	double-check your code before you proceed.
 </li>
 <li>
-Pressing the Import SVG button will parse the SVG code, translate it into Glyphr Studio
-shapes and paths, and insert it into the specified character. There is also a
-button to jump to the Character Edit page for the selected character, and a
-button to clear the code box.
+	Pressing the Import SVG button will parse the SVG code, translate it into Glyphr Studio
+	shapes and paths, and insert it into the specified glyph. There is also a
+	button to jump to the Glyph Edit page for the selected glyph, and a
+	button to clear the code box.
 </li>
 </ul>
 
@@ -100,83 +104,83 @@ button to clear the code box.
 <h2>Notes about SVG</h2>
 
 <p>
-SVG is a huge language that is
-capable of defining a much larger set of graphic design concepts than are
-needed for font glyph design. As a result, Glyphr Studio ignores much of the
-SVG code that gets imported.
+	SVG is a huge language that is
+	capable of defining a much larger set of graphic design concepts than are
+	needed for font glyph design. As a result, Glyphr Studio ignores much of the
+	SVG code that gets imported.
 </p>
 
 <p>
-What Glyphr Studio imports:
+	What Glyphr Studio imports:
 </p>
 
 <ul>
 <li>
-Outline data from the following tags: path, rect, polygon,
-polyline, circle, and ellipse.
+	Outline data from the following tags: path, rect, polygon,
+	polyline, circle, and ellipse.
 </li>
 <li>
-The following commands from the 'd' attribute in the path tag: Move
-To (Mm), Line To (Ll), Horizontal Line To (Hh), Vertical Line To (Vv), Bezier
-Line To (Cc), Smooth Bezier Line To (Ss), Quadratic Bezier Line To (Qq), Smooth
-Quadratic Bezier Line To (Tt) Close Path (Zz).
+	The following commands from the 'd' attribute in the path tag: Move
+	To (Mm), Line To (Ll), Horizontal Line To (Hh), Vertical Line To (Vv), Bezier
+	Line To (Cc), Smooth Bezier Line To (Ss), Quadratic Bezier Line To (Qq), Smooth
+	Quadratic Bezier Line To (Tt) Close Path (Zz).
 </li>
 </ul>
 
 
 <p>
-What Glyphr Studio ignores:
+	What Glyphr Studio ignores:
 </p>
 
 <ul>
 <li>
-The 'line' tag. And, basically any tag not mentioned in the
-previous section.
+	The 'line' tag. And, basically any tag not mentioned in the
+	previous section.
 </li>
 <li>
-All stroke attributes, like stroke-width. Paths are assumed to
-be outlines of shapes.
+	All stroke attributes, like stroke-width. Paths are assumed to
+	be outlines of shapes.
 </li>
 <li>
-The Arc To (Aa) path commands in the 'd' attribute
+	The Arc To (Aa) path commands in the 'd' attribute
 </li>
 <li>
-The 'g' tag, and all its attributes. Any transformations are
-ignored.
+	The 'g' tag, and all its attributes. Any transformations are
+	ignored.
 </li>
 <li>
-The 'svg' tag itself. ViewBox, x, y, width, height attributes
-are all ignored.
+	The 'svg' tag itself. ViewBox, x, y, width, height attributes
+	are all ignored.
 </li>
 </ul>
 
 
 <p>
-Things to keep in mind:
+	Things to keep in mind:
 </p>
 
 <ul>
 <li>
-All lines or paths will be closed by Glyphr Studio. AKA: the
-last point in any path will be connected with the first point.
+	All lines or paths will be closed by Glyphr Studio. The
+	last point in any path will be connected with the first point.
 </li>
 <li>
-Path direction (or 'winding') is not important in SVG, but it is
-important in glyph design. Winding determines if two overlapping shapes both
-appear filled, or if one 'cuts out' from the other. This can be toggled in the
-Shape Attributes Panel with the 'overlap mode' attribute.
+	Path direction (or 'winding') is not important in SVG, but it is
+	important in glyph design. Winding determines if two overlapping shapes both
+	appear filled, or if one 'cuts out' from the other. This can be toggled in the
+	Shape Attributes Panel with the 'overlap mode' attribute.
 </li>
 <li>
-Adobe Illustrator artboards don't get exported to SVG. If you're
-importing from Illustrator, and not using the Scale option in Glyphr Studio,
-then imported shapes may end up in a surprising location, like way outside the
-Em square.
+	Adobe Illustrator artboards don't get exported to SVG. If you're
+	importing from Illustrator, and not using the Scale option in Glyphr Studio,
+	then imported shapes may end up in a surprising location, like way outside the
+	Em square.
 </li>
 <li>
-Some rectangles that have been rotated in Adobe Illustrator
-export as SVG rectangles with a transform applied (which Glyphr Studio
-ignores). You can remedy this by right-clicking the rotated rectangle in
-Illustrator, and selecting “Make Compound Path”.
+	Some rectangles that have been rotated in Adobe Illustrator
+	export as SVG rectangles with a transform applied (which Glyphr Studio
+	ignores). You can remedy this by right-clicking the rotated rectangle in
+	Illustrator, and selecting "Make Compound Path".
 </li>
 </ul>
 
@@ -188,7 +192,7 @@ Illustrator, and selecting “Make Compound Path”.
 		<div class='footer'>
 			Help Documentation for Glyphr Studio v1.00.00<br>
 			For help with other versions, email <a href='mailto:mail@glyphrstudio.com'>mail@glyphrstudio.com</a><br>
-			Last updated Sun Mar 29 2015
+			Last updated Mon May 04 2015
 		</div>
 	</td></tr>
 	</table>
