@@ -92,6 +92,16 @@ module.exports = function(grunt) {
 					banner: bannerhtml,
 					footer: footerhtml
 				}
+			},
+			updates: {
+				files: [{
+					src: 'articles/overview_updates.htm',
+					dest: 'overview_updates.html'
+				}],
+				options: {
+					banner: bannerhtml,
+					footer: footerhtml
+				}
 			}
 		},
 		copy: {
@@ -117,5 +127,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	// Tasks
-	grunt.registerTask('default', ['concat', 'copy']);
+	grunt.registerTask('default', 'concat:updates');
+	grunt.registerTask('build', ['concat:build', 'copy']);
 };
