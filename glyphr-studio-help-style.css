@@ -177,13 +177,11 @@ a:hover {
 .minor b,
 .patch b {
 	display:inline-block;
-	width:150px;
+	width:180px;
 }
 
-.major b { font-size: 1.8em; }
+.major b { font-size: 2em; }
 .minor b { font-size: 1.6em; }
-.patch b { font-size: 1.4em; }
-
 
 .keycol {
 	text-align: right;
