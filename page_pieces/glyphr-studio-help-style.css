@@ -174,8 +174,11 @@ a:hover {
 .update b {
 	display:inline-block;
 	width:150px;
-	font-size: 1.8em;
 }
+
+.update .major b { font-size: 1.8em;}
+.update .minor b { font-size: 1.6em;}
+.update b { font-size: 1.4em;}
 
 .keycol {
 	text-align: right;
