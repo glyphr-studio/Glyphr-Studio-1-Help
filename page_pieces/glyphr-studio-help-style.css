@@ -176,8 +176,8 @@ a:hover {
 	width:150px;
 }
 
-.update .major b { font-size: 1.8em;}
-.update .minor b { font-size: 1.6em;}
+.major b { font-size: 1.8em;}
+.minor b { font-size: 1.6em;}
 .update b { font-size: 1.4em;}
 
 .keycol {
