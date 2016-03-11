@@ -180,9 +180,10 @@ a:hover {
 	width:150px;
 }
 
-.major b { font-size: 1.8em;}
-.minor b { font-size: 1.6em;}
-.patch b { font-size: 1.4em;}
+.major b { font-size: 1.8em; }
+.minor b { font-size: 1.6em; }
+.patch b { font-size: 1.4em; }
+
 
 .keycol {
 	text-align: right;
