@@ -162,7 +162,9 @@ a:hover {
 	border-bottom: 1px solid rgb(204,209,214);
 }
 
-.update {
+.major,
+.minor,
+.patch {
 	font-size:1.2em;
 	background-color:rgb(240,246,250);
 	padding:12px 0px 8px 20px;
@@ -171,14 +173,16 @@ a:hover {
 	left: -20px;
 }
 
-.update b {
+.major b,
+.minor b,
+.patch b {
 	display:inline-block;
 	width:150px;
 }
 
 .major b { font-size: 1.8em;}
 .minor b { font-size: 1.6em;}
-.update b { font-size: 1.4em;}
+.patch b { font-size: 1.4em;}
 
 .keycol {
 	text-align: right;
