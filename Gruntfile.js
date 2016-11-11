@@ -7,10 +7,13 @@ module.exports = function(grunt) {
 	var manifest = [
 		'#Overview',
 		'welcome',
+		'overview_updates',
+		'overview_licensing',
+
+		'#Basics',
 		'overview_starting_a_new_project',
 		'overview_navigation_and_layout',
 		'overview_file_formats',
-		'overview_updates',
 		'overview_unicode',
 
 		'#Editing',
