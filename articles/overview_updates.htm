@@ -10,6 +10,40 @@
 
 
 <p>
+	<div class="minor"><b>v1.08.00</b> 9/1/2017 </div>
+	New Features
+	<ul>
+		<li>When inserting a new Component Instance, or using the 'Get Shapes' command to 
+			paste all the shapes from one glyph to another, there are new options to also 
+			copy Glyph Attributes like Width and Side Bearings.  This is very useful if you 
+			use these copy commands for diacritical marks, where the new glyph should have 
+			both the shapes and the glyph dimensions of the root glyph.
+		</li>
+		<li>Little notation on the splash screen and on the About page that indicates if 
+			Glyphr Studio has been updated in the past week.
+		</li>
+
+	Bug Fixes
+	<ul>
+		<li>Removed glyphs 0x0080 through 0x009F from the chooser panel. In Unicode, 
+			these are printing control glyphs that have no visual associated with them. 
+			But, browsers tend to replace these with ANSI glyphs, so the glyph chooser was 
+			erroneously showing previews, causing confusion.</li>
+		<li>Fixed a bug where 'Bulk transform shapes' also transformed shapes in other glyphs.</li>
+		<li>Added support for SVG number notation, where numbers like '123.45.67.89' are interpreted 
+			as '123.45, 0.67, 0.89'.</li>
+		<li>Fixed a bug to only export SVG glyphs if that glyph has a valid hexadecimal key value.</li>
+		<li>Fixed a bug where you weren't able to set a shape's x/y coordinate to zero.</li>
+		<li>Fixed a bug on Mac where releasing the command key did not exit multi-select mode. 
+			(Releasing the key should work, but if not, clicking either the Arrow or Pen tool 
+			again will now forcefully exit multi-select mode)</li>
+		<li>Glyph Range in the Chooser panel is remembered when the panel is switched.</li>
+		<li>Fixed a bug where editing shape width/height via Attributes Panel was not honoring Lock Aspect Ratio.</li>
+	</ul>
+</p>
+
+
+<p>
 	<div class="patch"><b>v1.07.09</b> 2/3/2017 </div>
 	Bug Fixes
 	<ul>
