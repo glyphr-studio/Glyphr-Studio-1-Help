@@ -9,18 +9,55 @@
 </p>
 
 
+
+<p>
+	<div class="minor"><b>v1.10.00</b> 3/2/2018 </div>
+	New Features
+	<ul>
+		<li>Global Actions - a set of actions that can be applied to many or all glyphs at once.
+			We have 3 to begin with, let us know if you have ideas for any others, they are easy
+			to add!
+		</li>
+		<li>Auto Zoom - a much improved algorithm for fitting the current Context Glyphs to your screen</li>
+		<li>Shift + Nudge - holding down the shift key while using the arrow keys to nudge shapes and points
+			will now move 10 Em Units instead of one
+		</li>
+		<li>New Project - menu item and keyboard shortcut to launch a new Glyphr Studio project</li>
+	</ul>
+
+	Bug Fixes
+	<ul>
+		<li>Fixed importing winding information for paths</li>
+		<li>Limit length of Font Family Name string, which causes OTF errors</li>
+		<li>Cleaned up some typos and global variables</li>
+		<li>Better "total failure" page error message</li>
+	</ul>
+</p>
+
+
+<p>
+	<div class="patch"><b>v1.09.01</b> 12/20/2017 </div>
+	Bug Fixes
+	<ul>
+		<li>Major Kern tool performance updates - tested at 700 kern pairs</li>
+		<li>Dueling sliders now work for Guide Transparency in the Context Glyphs dropdown</li>
+		<li>Test drive now uses 100% of the height of the preview area</li>
+		<li>Kern text white background now disappears when Transparency = 100%</li>
+	</ul>
+</p>
+
 <p>
 	<div class="minor"><b>v1.09.00</b> 10/30/2017 </div>
 	New Features
 	<ul>
-		<li>Context Glyphs - type a few glyphs to show before and/or after the glyph 
-			you are currently editing on the edit canvas.  Easily navigate to any of 
-			those displayed glyphs by clicking on that glyphs name on the Edit Canvas. 
+		<li>Context Glyphs - type a few glyphs to show before and/or after the glyph
+			you are currently editing on the edit canvas.  Easily navigate to any of
+			those displayed glyphs by clicking on that glyphs name on the Edit Canvas.
 		</li>
-		<li>Notes on the Ligature and Kerning pages describing how to export to OTF 
+		<li>Notes on the Ligature and Kerning pages describing how to export to OTF
 			font files via SVG Fonts.
 		</li>
-		<li>Better slider controls for transparency settings (grids and guides) around 
+		<li>Better slider controls for transparency settings (grids and guides) around
 			the whole tool.
 		</li>
 	</ul>
@@ -28,7 +65,7 @@
 	Bug Fixes
 	<ul>
 		<li>Contribute link now works in the Desktop client.</li>
-		<li>Show a toast notification when Undo-ing spans many glyphs, and requires 
+		<li>Show a toast notification when Undo-ing spans many glyphs, and requires
 			navigating to a different glyph.
 		</li>
 		<li>Test Drive re-factored, including some very small updates.</li>
@@ -39,30 +76,30 @@
 	<div class="minor"><b>v1.08.00</b> 9/1/2017 </div>
 	New Features
 	<ul>
-		<li>When inserting a new Component Instance, or using the 'Get Shapes' command to 
-			paste all the shapes from one glyph to another, there are new options to also 
-			copy Glyph Attributes like Width and Side Bearings.  This is very useful if you 
-			use these copy commands for diacritical marks, where the new glyph should have 
+		<li>When inserting a new Component Instance, or using the 'Get Shapes' command to
+			paste all the shapes from one glyph to another, there are new options to also
+			copy Glyph Attributes like Width and Side Bearings.  This is very useful if you
+			use these copy commands for diacritical marks, where the new glyph should have
 			both the shapes and the glyph dimensions of the root glyph.
 		</li>
-		<li>Little notation on the splash screen and on the About page that indicates if 
+		<li>Little notation on the splash screen and on the About page that indicates if
 			Glyphr Studio has been updated in the past week.
 		</li>
 	</ul>
 
 	Bug Fixes
 	<ul>
-		<li>Removed glyphs 0x0080 through 0x009F from the chooser panel. In Unicode, 
-			these are printing control glyphs that have no visual associated with them. 
-			But, browsers tend to replace these with ANSI glyphs, so the glyph chooser was 
+		<li>Removed glyphs 0x0080 through 0x009F from the chooser panel. In Unicode,
+			these are printing control glyphs that have no visual associated with them.
+			But, browsers tend to replace these with ANSI glyphs, so the glyph chooser was
 			erroneously showing previews, causing confusion.</li>
 		<li>Fixed a bug where 'Bulk transform shapes' also transformed shapes in other glyphs.</li>
-		<li>Added support for SVG number notation, where numbers like '123.45.67.89' are interpreted 
+		<li>Added support for SVG number notation, where numbers like '123.45.67.89' are interpreted
 			as '123.45, 0.67, 0.89'.</li>
 		<li>Fixed a bug to only export SVG glyphs if that glyph has a valid hexadecimal key value.</li>
 		<li>Fixed a bug where you weren't able to set a shape's x/y coordinate to zero.</li>
-		<li>Fixed a bug on Mac where releasing the command key did not exit multi-select mode. 
-			(Releasing the key should work, but if not, clicking either the Arrow or Pen tool 
+		<li>Fixed a bug on Mac where releasing the command key did not exit multi-select mode.
+			(Releasing the key should work, but if not, clicking either the Arrow or Pen tool
 			again will now forcefully exit multi-select mode)</li>
 		<li>Glyph Range in the Chooser panel is remembered when the panel is switched.</li>
 		<li>Fixed a bug where editing shape width/height via Attributes Panel was not honoring Lock Aspect Ratio.</li>
