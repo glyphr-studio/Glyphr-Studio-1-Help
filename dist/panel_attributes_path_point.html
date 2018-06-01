@@ -57,28 +57,43 @@
 		<td class="articlearea">
 			<div class="article">
 
-<h1>Glyph Edit Page</h1>
+<h1>Path Point - Attributes Panel</h1>
 
-<img src="img/header_glyph_edit.png"/>
+<p><i>(Glyph Edit, Components, and Ligatures Pages)</i></p>
 
-<p>
-	Glyph Edit is where most of your font creation time will be spent.  Each glyph in your 
-	font is comprised of many shapes.  Shapes are closed outlines or paths, comprised of many path 
-	points.  More on shape editing can be found on the <a class="articlelink" href="editing_shape_editing.html">
-	shape editing</a> page.
-</p>
+<ul>
+	<li>
+		<b>Selected Point</b> - 
+		Displays which point is currently selected. 0 is the first Path Point.
+	</li>
+	<li>
+		<b>Point Type</b> - 
+		Each Path Point has two	handles that control the curve of the path before and after it. 
+		There are three	kinds of Point Types: Corner (Handles can be anywhere), Flat (Handles will be
+		in line with each other), and Symmetric (Handles will be in-line with each
+		other and equidistant from the Path Point).
+	</li>
+	<li>
+		<b>Point X / Point Y</b> - 
+		The Path Point's coordinates. These	attributes are set in Em Units. These attributes are lockable.
+	<li>
+		<b>Use Handle 1 / Use Handle 2</b> - 
+		Deselecting	the checkbox by the handle title will remove the handle, such that it will not
+		impact the curvature of the path. These options are only available for Flat
+		and Corner point types.
+	</li>
+	<li>
+		<b>Handle 1 X/Y &amp; Handle 2 X/Y</b> - 
+		The	Handle's coordinates. These attributes are set in Em Units. These attributes are
+		lockable.
+	</li>
+	<li>
+		<b>Handle 1 Angle / Handle 2 Angle</b> - 
+		read-only degree of the handle away from an imaginary horizontal line drawn through the
+		point. Zero degrees is to the left, 180 degrees to the right.
+	</li>
+</ul>
 
-<p>
-	Depending on what shape or path point is selected, the <a class="articlelink" href="editing_shape_editing.html">
-	shape attribute panel</a> or the <a class="articlelink" href="panel_path_point.html">path point 
-	attribute panel</a> will show editable attributes and actions.  Many of these attributes, like 
-	x/y position, can either be edited from the attributes panel, or changed directly on the edit canvas.
-</p>
-
-<p>
-	If you want to add or remove certain glyphs from your font, you can do so on the 
-	<a class="articlelink" href="page_font_settings.html">font settings page</a>.
-</p>
 
 			</div>
 		</td>
@@ -87,7 +102,7 @@
 		<div class='footer'>
 			Help Documentation for Glyphr Studio v1.*<br>
 			For help with other versions, email <a href='mailto:mail@glyphrstudio.com'>mail@glyphrstudio.com</a><br>
-			Last updated Mon Oct 30 2017
+			Last updated Thu May 31 2018
 		</div>
 	</td></tr>
 	</table>

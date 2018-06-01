@@ -57,26 +57,50 @@
 		<td class="articlearea">
 			<div class="article">
 
-<h1>Ligatures Page</h1>
+<h1>Component Instance - Attributes Panel</h1>
 
-<img src="img/header_ligatures.png"/>
+<p><i>(Glyph Edit, Components, and Ligatures Pages)</i></p>
 
+<h3>Component Instance</h3>
+<ul>
+	<li>
+		<b>Instance Name</b> - 
+		Any name you want to give this Component Instance. Can be different than the Root Component 
+		name.
+	</li>
+	<li>
+		<b>&#916;X / &#916;Y</b> - 
+		These coordinates are used to move the Component Instance 
+		to a new location. These are delta values, meaning they are
+		relative to the position of the Root Component.
+	</li>
+	<li>
+		<b>&#916;Width / &#916;Height</b> - 
+		These dimensions are used to re-size the Component Instance.  These are delta values, meaning 
+		they are relative to the size of the Root Component.
+	</li>
+	<li>
+		<b>Lock Aspect Ratio</b> - 
+		Selecting this checkbox will cause the Component Instance to be re-sized proportionally.
+	</li>
+	<li>
+		<b>Flip Horizontal / Flip Vertical</b> - 
+		The Component Instance will be flipped relative to the Root Component.
+	</li>
+	<li>
+		<b>Reverse Winding</b> - 
+		All shapes in the Component Instance will have their windings reversed.  The clockwise or 
+		counterclockwise direction of Path Points along a Path determine if that shape will 
+		additively or subtractively overlap with other shapes in the glyph.
+	</li>
+</ul>
+
+<h3>Root Component</h3>
 <p>
-	Ligatures are when two or more glyphs get combined into one glyph.  Generically, 
-	when you define a ligature, two or more glyphs are specified, and instead of showing 
-	those glyphs when a user is typing, those glyphs get replaced with a single new ligature glyph.
+	The Root Component is shown in the Attributes Panel for every Component Instance.  Clicking on 
+	the Root Component thumbnail or name will navigate to that glyph so you can edit it.
 </p>
-<p>
-	Some common lowercase ligatures involve combining the crossbars of glyphs like f and t, 
-	forming ligatures like &#64256; and &#64261;.  A common uppercase ligature combines the glyphs 
-	A and E into the ligature &AElig;.  Ligatures can also be used for any other sequence replacement, 
-	for example fractions: the three glyphs 1 and / and 4 could be turned into the ligature &frac14;.  
-</p>
-<p>
-	Creating a new ligature is as easy as specifying the two or more glyphs to combine.  
-	Designing the resulting glyph uses exactly the same tools and processes as designing 
-	regular glyphs on the Glyph Edit page.
-</p>
+
 
 			</div>
 		</td>
@@ -85,7 +109,7 @@
 		<div class='footer'>
 			Help Documentation for Glyphr Studio v1.*<br>
 			For help with other versions, email <a href='mailto:mail@glyphrstudio.com'>mail@glyphrstudio.com</a><br>
-			Last updated Mon Oct 30 2017
+			Last updated Thu May 31 2018
 		</div>
 	</td></tr>
 	</table>

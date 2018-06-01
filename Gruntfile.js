@@ -88,7 +88,7 @@ module.exports = function(grunt) {
 					expand: true,		// Enable dynamic expansion.
 					cwd: 'articles/',	// Src matches are relative to this path.
 					src: ['*.htm'],		// Actual pattern(s) to match.
-					dest: '',			// Destination path prefix.
+					dest: 'dist/',		// Destination path prefix.
 					ext: '.html'		// Dest filepaths will have this extension.
 				}],
 				options: {
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 			updates: {
 				files: [{
 					src: 'articles/overview_updates.htm',
-					dest: 'overview_updates.html'
+					dest: 'dist/overview_updates.html'
 				}],
 				options: {
 					banner: bannerhtml,
@@ -114,11 +114,11 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'articles/img/',
 						src: ['*.png'],
-						dest: 'img/'
+						dest: 'dist/img/'
 					},
 					{
 						src: 'page_pieces/glyphr-studio-help-style.css',
-						dest: 'glyphr-studio-help-style.css'
+						dest: 'dist/glyphr-studio-help-style.css'
 					}
 				]
 			}
