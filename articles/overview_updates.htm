@@ -11,7 +11,28 @@
 
 
 <p>
-	<div class="minor"><b>v1.11.01</b> 9/19/2018 </div>
+	<div class="minor"><b>v1.12.00</b> 12/8/2018 </div>
+    New Features
+	<ul>
+        <li>A huge Unicode Code Block range chooser - easily preview and add any Unicode code block to your project!</li>
+        <li>Glyph Ranges now support custom range names.</li>
+        <li>Glyph Ranges can now be edited.</li>
+        <li>Font Exports and Imports now only export/import "active" glyph ranges... this may be more like a bug fix :-)</li>
+        <li>It is now possible to disable the Basic Latin glyph range.</li>
+        <li>Global Action: Re-size all glyphs - now has an additional option to update the Glyph Width (advance width) property.</li>
+    </ul>
+
+	Bug Fixes
+	<ul>
+        <li>Ligatures for HTML comment strings now work, like &lt;!--</li>
+        <li>Ligatures 0x 0X u+ U+ now work - they previously were treated as invalid Unicode / Hex inputs, but they are valid 2 character ligatures.</li>
+    </ul>
+</p>
+
+
+
+<p>
+	<div class="patch"><b>v1.11.01</b> 9/19/2018 </div>
 	New Features
 	<ul>
         <li>"Delete Glyph" action now available from the Glyph Chooser and Attribute panels.</li>
