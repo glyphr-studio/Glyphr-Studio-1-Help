@@ -11,32 +11,63 @@
 
 
 <p>
+	<div class="minor"><b>v1.13.00</b> 1/22/2019 </div>
+	New Features
+	<ul>
+		<li>Paste or Drag+Drop SVG straight onto the canvas - if your SVG is designed so it doesn't need to be scaled, 
+			then you can copy the code and paste it directly to the edit canvas, or drag and drop an .svg file to import 
+			the shapes.
+		</li>
+		<li>New Global Action - Advanced Diactritical Glyph generator. If you design glyphs in the Basic Latin and  
+			Combining Diacritical Marks ranges, then this action will use them to generate the Latin Supplement and 
+			Latin Extended A character ranges.</li>
+		<li>The 'All Caps Font' Global Action is now extended to (optionally) cover the Latin Supplement, Extended A,  
+			and Extended B glyph ranges.</li>
+		<li>Snap to Grid / Snap to Guide.  Thanks to GitHub user <b>monolifed</b> for contributing the feature!</li>
+		<li>Updated the overall Glyph Names list to reflect the Unicode v.11 update that landed June 2018.</li>
+		<li>Better default view for empty glyphs.</li>
+	</ul>
+
+	Bug Fixes
+	<ul>
+		<li>Fixed a key binding so that the question mark glyph can be used as a Ligature, instead of summoning the 
+			keyboard shortcuts dialog.
+		</li>
+		<li>Throw a warning if Monospace Global Action is set to zero as the width.</li>
+		<li>Importing a custom range from the Open Projects page.</li>
+		<li>Glyph Chooser panel now displays a selected range that was removed.</li>
+	</ul>
+</p>
+
+
+
+<p>
 	<div class="patch"><b>v1.12.01</b> 12/9/2018 </div>
 	Bug Fixes
 	<ul>
-        <li>Ligature and Component chooser panels now work.</li>
-    </ul>
+		<li>Ligature and Component chooser panels now work.</li>
+	</ul>
 </p>
 
 
 
 <p>
 	<div class="minor"><b>v1.12.00</b> 12/8/2018 </div>
-    New Features
+	New Features
 	<ul>
-        <li>A huge Unicode Code Block range chooser - easily preview and add any Unicode code block to your project!</li>
-        <li>Glyph Ranges now support custom range names.</li>
-        <li>Glyph Ranges can now be edited.</li>
-        <li>Font Exports and Imports now only export/import "active" glyph ranges... this may be more like a bug fix :-)</li>
-        <li>It is now possible to disable the Basic Latin glyph range.</li>
-        <li>Global Action: Re-size all glyphs - now has an additional option to update the Glyph Width (advance width) property.</li>
-    </ul>
+		<li>A huge Unicode Code Block range chooser - easily preview and add any Unicode code block to your project!</li>
+		<li>Glyph Ranges now support custom range names.</li>
+		<li>Glyph Ranges can now be edited.</li>
+		<li>Font Exports and Imports now only export/import "active" glyph ranges... this may be more like a bug fix :-)</li>
+		<li>It is now possible to disable the Basic Latin glyph range.</li>
+		<li>Global Action: Re-size all glyphs - now has an additional option to update the Glyph Width (advance width) property.</li>
+	</ul>
 
 	Bug Fixes
 	<ul>
-        <li>Ligatures for HTML comment strings now work, like &lt;!--</li>
-        <li>Ligatures 0x 0X u+ U+ now work - they previously were treated as invalid Unicode / Hex inputs, but they are valid 2 character ligatures.</li>
-    </ul>
+		<li>Ligatures for HTML comment strings now work, like &lt;!--</li>
+		<li>Ligatures 0x 0X u+ U+ now work - they previously were treated as invalid Unicode / Hex inputs, but they are valid 2 character ligatures.</li>
+	</ul>
 </p>
 
 
@@ -45,19 +76,19 @@
 	<div class="patch"><b>v1.11.01</b> 9/19/2018 </div>
 	New Features
 	<ul>
-        <li>"Delete Glyph" action now available from the Glyph Chooser and Attribute panels.</li>
-        <li>"Re-size Glyphs" is now available as a Global Action.</li>
-        <li>"Convert Component Instances into Shapes" is another new Global Action, useful for flattening all shapes.</li>
-        <li>More accurate naming for the entire Basic Multilingual Plane.</li>
-        <li>Speed optimizations for OTF export.</li>
-    </ul>
-    
+		<li>"Delete Glyph" action now available from the Glyph Chooser and Attribute panels.</li>
+		<li>"Re-size Glyphs" is now available as a Global Action.</li>
+		<li>"Convert Component Instances into Shapes" is another new Global Action, useful for flattening all shapes.</li>
+		<li>More accurate naming for the entire Basic Multilingual Plane.</li>
+		<li>Speed optimizations for OTF export.</li>
+	</ul>
+	
 	Bug Fixes
 	<ul>
-        <li>Exporting Ligatures now checks to see if there are any existing glyphs in the Unicode Private Use area, before writing Ligature information there.</li>
-        <li>Fixed a bug around adding a glyph to another glyph as a component instance.</li>
-        <li>Only showing multi-point advanced alignment actions when many points are selected.</li>
-    </ul>
+		<li>Exporting Ligatures now checks to see if there are any existing glyphs in the Unicode Private Use area, before writing Ligature information there.</li>
+		<li>Fixed a bug around adding a glyph to another glyph as a component instance.</li>
+		<li>Only showing multi-point advanced alignment actions when many points are selected.</li>
+	</ul>
 </p>
 
 
@@ -66,16 +97,16 @@
 	<div class="minor"><b>v1.11.00</b> 8/7/2018 </div>
 	New Features
 	<ul>
-        <li>Ligatures export directly to OTF files!</li>
-        <li>Ligatures that also have a single Unicode code point will be exported accordingly.</li>
+		<li>Ligatures export directly to OTF files!</li>
+		<li>Ligatures that also have a single Unicode code point will be exported accordingly.</li>
 		<li>A few small Ligature improvements around adding common ligatures, and displaying thumbnails.</li>
 	</ul>
 
 	Bug Fixes
 	<ul>
-        <li>Fixed a bug around handling glyphs that use multiple Component Instances with the same Root Component.</li>
-        <li>Correctly handle / draw side bearings equal to zero.</li>
-        <li>Allow / disallow correct characters when exporting metadata to SVG Fonts.</li>
+		<li>Fixed a bug around handling glyphs that use multiple Component Instances with the same Root Component.</li>
+		<li>Correctly handle / draw side bearings equal to zero.</li>
+		<li>Allow / disallow correct characters when exporting metadata to SVG Fonts.</li>
 		<li>Fixed an export bug involving locked points and glyphs with left side bearings.</li>
 	</ul>
 </p>
