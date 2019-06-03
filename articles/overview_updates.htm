@@ -11,6 +11,28 @@
 
 
 <p>
+	<div class="patch"><b>v1.13.02</b> 6/3/2019 </div>
+	New Features
+	<ul>
+		<li>Shift + Rotate now snaps to one degree increments.</li>
+	</ul>
+
+	Bug Fixes
+	<ul>
+		<li>Fixed the sluggishness / disconnect between the rotate handle and the actual glyph. 
+			The rotation tool is now locked to cached glyph attributes, as opposed to relying on quick 
+			deltas of mouse movement.
+		</li>
+		<li>Fixed a bug where flat points with only one visible handle were rotating improperly.</li>
+		<li>Fixed the disappearing panels bug.</li>
+		<li>Rotated component instances now save with the appropriate positive / negative angle attribute. 
+			Old projects with rotated component instances will be upgraded, and will work as expected.
+		</li>
+	</ul>
+</p>
+
+
+<p>
 	<div class="patch"><b>v1.13.01</b> 5/26/2019 </div>
 	New Features
 	<ul>
