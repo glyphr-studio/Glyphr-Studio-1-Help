@@ -70,6 +70,36 @@
 
 
 <p>
+	<div class="patch"><b>v1.13.05</b> 12/11/2019 </div>
+	New Features
+	<ul>
+		<li>New Previous / Next buttons below the Context Glyphs input box allow 
+			you to quickly flip through glyphs.
+		</li>
+		<li>Mark overlapping path points - set a radius that highlights if two points 
+			are very close together.
+		</li>
+		<li>SVG Import engine now supports the Glyph tag (for copy/pasting from SVG Fonts).</li>
+		<li>Test Drive letter permutations - automatically add all Uppercase or Lowercase 
+			letter permutations to the Test Drive preview area.</li>
+		<li>Test Drive preview area now dynamically expands in height to the input content.</li>
+	</ul>
+
+	Bug Fixes
+	<ul>
+		<li>Copy+Paste SVG straight to canvas bug is fixed.</li>
+		<li>Lots of little keyboard handlers were broken at some point, now they're fixed.</li>
+		<li>Toast messages work better when rapidly changing.</li>
+		<li>Reverse Winding now keeps Path Point zero as the same point.</li>
+		<li>Whitespace glyphs besides Space export with zero shapes.</li>
+		<li>Notdef glyph scales to different capheights</li>
+		<li>Default view for Kerning is auto-calculated, as opposed to static.</li>
+	</ul>
+</p>
+
+
+
+<p>
 	<div class="patch"><b>v1.13.04</b> 8/2/2019 </div>
 	New Features
 	<ul>
@@ -90,7 +120,7 @@
 	<div class="patch"><b>v1.13.03</b> 7/2/2019 </div>
 	Bug Fixes
 	<ul>
-		<li>For 'Hilight path points that contain non-integer values' project setting, 
+		<li>For 'Highlight path points that contain non-integer values' project setting, 
 			handles with decimal values are also drawn in red, as opposed to just the base point.</li>
 		<li>OTF Character names are now exported as ASCII and conform to name standards.</li>
 		<li>Fixed a bug involving exporting Ligatures along side default Ligatures that have 
@@ -783,7 +813,7 @@
 	<div class="patch"><b>v1.00.03</b> 5/13/2015</div>
 	Bug Fixes:
 	<ul>
-		<li>Editing metadata that cointain quotes</li>
+		<li>Editing metadata that contain quotes</li>
 		<li>Exporting fonts with UPM greater than 1000 now works</li>
 	</ul>
 </p>
@@ -918,7 +948,7 @@
 		<div class='footer'>
 			Help Documentation for Glyphr Studio v1.*<br>
 			For help with other versions, email <a href='mailto:mail@glyphrstudio.com'>mail@glyphrstudio.com</a><br>
-			Last updated Fri Aug 02 2019
+			Last updated Wed Dec 11 2019
 		</div>
 	</td></tr>
 	</table>
