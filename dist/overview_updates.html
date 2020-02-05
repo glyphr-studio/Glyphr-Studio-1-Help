@@ -70,6 +70,28 @@
 
 
 <p>
+	<div class="patch"><b>v1.13.06</b> 2/5/2020 </div>
+	New Features
+	<ul>
+		<li>Export Glyph SVG File - you can now save a .svg file that represents a single glyph. 
+			Combined with drag-and-drop into another project, this allows you merge fonts by 
+			moving characters from one project to another.
+		</li>
+	</ul>
+
+	Bug Fixes
+	<ul>
+		<li>Changed exported OTF shapes to be clockwise by default</li>
+		<li>Fixed a bug where flat path points were hiding a handle when it was imported from a compound SVG shape</li>
+		<li>Changed the non-breaking space glyph name from 'nobreakspace' to 'nbsp'</li>
+		<li>Added soft hyphen U+00AD glyph to the list of exportable whitespace glyphs</li>
+		<li>Updated the default font metadata to use canonical family names ("Regular" instead of "normal")</li>
+	</ul>
+</p>
+
+
+
+<p>
 	<div class="patch"><b>v1.13.05</b> 12/11/2019 </div>
 	New Features
 	<ul>
@@ -948,7 +970,7 @@
 		<div class='footer'>
 			Help Documentation for Glyphr Studio v1.*<br>
 			For help with other versions, email <a href='mailto:mail@glyphrstudio.com'>mail@glyphrstudio.com</a><br>
-			Last updated Wed Dec 11 2019
+			Last updated Wed Feb 05 2020
 		</div>
 	</td></tr>
 	</table>
