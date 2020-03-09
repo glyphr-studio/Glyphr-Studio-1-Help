@@ -70,6 +70,35 @@
 
 
 <p>
+	<div class="patch"><b>v1.13.08</b> 3/9/2020 </div>
+	Bug Fixes
+	<ul>
+		<li>
+			Now support positive integers being separated / designated by '+' signs in path data.
+		</li>
+		<li>
+			Ignore namespaced attributes with ':' in the name to allow for importing SVG code snippets 
+			that would otherwise throw 'prefix not bound to a namespace' errors.
+		</li>
+	</ul>
+</p>
+
+
+
+<p>
+	<div class="patch"><b>v1.13.07</b> 2/11/2020 </div>
+	Bug Fixes
+	<ul>
+		<li>Fixed a bug where projects with Ligatures experienced an "Off by 1" or "Off by 2" 
+			error, where character sequences were being replaced with the wrong Ligature.
+		</li>
+		<li>Disallowed the creation and exporting of Ligatures with source sequences of one character.</li>
+	</ul>
+</p>
+
+
+
+<p>
 	<div class="patch"><b>v1.13.06</b> 2/5/2020 </div>
 	New Features
 	<ul>
@@ -970,7 +999,7 @@
 		<div class='footer'>
 			Help Documentation for Glyphr Studio v1.*<br>
 			For help with other versions, email <a href='mailto:mail@glyphrstudio.com'>mail@glyphrstudio.com</a><br>
-			Last updated Wed Feb 05 2020
+			Last updated Mon Mar 09 2020
 		</div>
 	</td></tr>
 	</table>
