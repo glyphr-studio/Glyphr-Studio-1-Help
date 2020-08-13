@@ -11,6 +11,31 @@
 
 
 <p>
+	<div class="patch"><b>v1.13.11</b> 8/13/2020 </div>
+	Bug Fixes
+	<ul>
+		<li>
+			Fixed an SVG / Export issue where the Left Side Bearing was incorrectly being 
+			either excluded, or included multiple times for linked component instances.
+		</li>
+		<li>Stopped an error from happening when a project only contains Ligatures.</li>
+	</ul>
+
+	Bug Discoveries
+	<ul>
+		<li>
+			Some OTF files when imported do not have Advance Width information present - this 
+			is a bug with opentype.js returning NaN for advance width properties of glyphs. 
+			Glyphr Studio defaults to "Auto calculate glyph width" in these cases, so you may not 
+			notice it.  The one place it will be very apparent is for the Space character, they appear 
+			as having zero width when this happens.
+		</li>
+	</ul>
+</p>
+
+
+
+<p>
 	<div class="patch"><b>v1.13.10</b> 6/11/2020 </div>
 	Bug Fixes
 	<ul>
