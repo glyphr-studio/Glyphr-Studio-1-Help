@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-	// mainfest variable will be used to generate
+	// Manifest variable will be used to generate
 	// the left hand nav. Underscores will be stripped
 	// to spaces. # Will be converted to section titles.
 
