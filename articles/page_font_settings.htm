@@ -12,13 +12,14 @@ properties in the Font Settings section to display and edit shapes:
 
 <ul>
 <li>
-Key Metrics - Glyphs have a total height of 1000 Units,
+Key Metrics - By default, glyphs have a total height of 1000 Units,
 called Em Units. The baseline of that glyph splits the upper and lower
 portions of the glyph vertically. Input an Ascent Height, and the Descent
 Height will be calculated automatically. X Height and Cap Height are common
-guides for lowercase and uppercase letters in your font.
-
-Note: these metrics may be used to scale imported SVG outlines.
+guides for lowercase and uppercase letters in your font. 
+These metrics may be used to scale imported SVG outlines.<br>
+<b>Important: It is highly recommended that Units per Em either be 1000, or a power of 2 (like 1024 or 2048). 
+UPM values other than these run a risk of not working with some applications.</b><br>
 </li>
 <li>
 Default Side Bearing - All glyphs have a small amount of
