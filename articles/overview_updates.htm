@@ -11,6 +11,48 @@
 
 
 <p>
+	<div class="patch"><b>v1.13.17</b> 2/17/2023</div>
+	Updates
+	<ul>
+		<li>
+			Added a new "Check for duplicate kern pairs" functionality - for projects with many kern groups, 
+			it can be easy to accidentally specify two values for a single kern pair. Run this test to double-check 
+			that isn't the case.
+		</li>
+		<li>
+			Clicking the middle mouse wheel now pans the canvas. Also, pressing the space bar immediately pans 
+			the canvas (without having to mouse-click as well).
+		</li>
+		<li>
+			Deleting a path point now automatically selects the next path point. Previously, after deletion everything 
+			was de-selected, which makes it hard to rapidly delete many path points in a row.
+		</li>
+	</ul>
+
+	Bug Fixes
+	<ul>
+		<li>
+			For entering characters in a kern pair, handled the case where a code point above 0xFFFF is entered 
+			(Code points above the BMP, like emojis, are not able to be worked with in Glyphr Studio v1).
+		</li>
+		<li>
+			Fixed bugs in the Edit Canvas when there were no Components, Kern pairs, or Ligatures to work on.
+		</li>
+	</ul>
+
+	Note 
+	<ul>
+		<li>
+			There have been a few reports of memory / crashing issues when many path points are deleted in a row. 
+			This is an issue in Chrome and Edge (both Chromium browsers) but it does not seem to affect FireFox. 
+			So if you need to delete a ton of path points, try FireFox while we find the root of the problem.
+		</li>
+	</ul>
+</p>
+
+
+
+<p>
 	<div class="patch"><b>v1.13.16</b> 1/30/2023</div>
 	Updates
 	<ul>
@@ -28,7 +70,7 @@
 		<li>2022 is now 2023!</li>
 	</ul>
 
-	Bug fixes
+	Bug Fixes
 	<ul>
 		<li>Kern properties panel is now more robust, handles error cases for blank inputs. And doesn't crash!</li>
 		<li>Fixed a small edge case bug for how project versions are checked and updated.</li>
