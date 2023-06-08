@@ -11,6 +11,35 @@
 
 
 <p>
+	<div class="patch"><b>v1.13.18</b> 3/15/2023</div>
+	Updates
+	<ul>
+		<li>
+			The list of Unicode Ranges now splits large ranges apart into groups of (0x1000). 
+			This is for performance reasons... ranges larger than this tend to lead the Glyph Chooser panel 
+			to load very slowly. The blocks that were split apart are:
+			<ul>
+				<li>CJK Unified Ideographs Extension A (U+3400 to U+4DBF)</li>
+				<li>CJK Unified Ideographs (U+4E00 to U+9FFF)</li>
+				<li>Hangul Syllables (U+AC00 to U+D7AF)</li>
+				<li>Private Use Area (U+E000 to U+F8FF)</li>
+			</ul>
+			This change will have no effect on previously-saved projects and their ranges.
+		</li>
+		<li>
+			For characters that don't have specified names from Unicode, a better default is now shown, 
+			which is a combination of the Unicode code point, plus the name of the Unicode block the 
+			character is from.
+		</li>
+		<li>
+			The Panel title now handles long character names better - it cuts them off without awkward 
+			wrapping, but also shows the whole name as a tooltip when you hover over it with your mouse.
+		</li>
+	</ul>
+</p>
+
+
+<p>
 	<div class="patch"><b>v1.13.17</b> 2/17/2023</div>
 	Updates
 	<ul>
