@@ -130,6 +130,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	// Tasks
-	grunt.registerTask('default', 'concat:updates');
+	grunt.registerTask('release', 'concat:updates');
 	grunt.registerTask('build', ['concat:build', 'copy']);
 };
