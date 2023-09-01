@@ -69,6 +69,21 @@
 
 
 <p>
+	<div class="patch"><b>v1.13.20</b> 9/1/2023</div>
+	Bug fixes
+	<ul>
+		<li>Importing compound shapes via SVG now works. Technically this was a bug where new paths started with
+			a relative 'move-to' command ('m'), and correct referencing to the previous path tag or compound path across a 
+			path's 'end-path' command ('Z'). </li>
+		<li>A few updates ago there were improvements made to the default naming of Unicode Ranges and Unicode Characters.
+			This introduced a bug where unused Unicode code points were being shown even when the "Hide unassigned code points"
+			was enabled. This is now fixed, unused Unicode code points are now hidden with this setting enabled.
+		</li>
+	</ul>
+</p>
+
+
+<p>
 	<div class="patch"><b>v1.13.19</b> 7/25/2023</div>
 	Updates
 	<ul>
@@ -1209,7 +1224,7 @@
 		<div class='footer'>
 			Help Documentation for Glyphr Studio v1.*<br>
 			For help with other versions, email <a href='mailto:mail@glyphrstudio.com'>mail@glyphrstudio.com</a><br>
-			Last updated Tue Jul 25 2023
+			Last updated Fri Sep 01 2023
 		</div>
 	</td></tr>
 	</table>
