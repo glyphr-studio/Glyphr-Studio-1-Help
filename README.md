@@ -18,7 +18,7 @@ Glyphr Studio is a free, web based font designer, focusing on font design hobbyi
 | GitHub | [github.com/glyphr-studio](https://github.com/glyphr-studio) |
 
 ## License
-Copyright (C) 2015 - 2023 Matthew LaGrandeur, released under [GPL 3.0](https://github.com/mattlag/Glyphr-Studio-Help/blob/master/LICENSE-gpl-3.0.txt)
+Copyright (C) 2015 - 2024 Matthew LaGrandeur, released under [GPL 3.0](https://github.com/mattlag/Glyphr-Studio-Help/blob/master/LICENSE-gpl-3.0.txt)
 
 ## Author
 | ![Matthew LaGrandeur's picture](https://1.gravatar.com/avatar/f6f7b963adc54db7e713d7bd5f4903ec?s=70) |
