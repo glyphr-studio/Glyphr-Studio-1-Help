@@ -11,10 +11,8 @@ Glyphr Studio is a free, web based font designer, focusing on font design hobbyi
 | App | [glyphrstudio.com/online](https://www.glyphrstudio.com/online) |
 | Help & Documentation | [glyphrstudio.com/help](https://www.glyphrstudio.com/help/) |
 | Blog | [glyphrstudio.com/blog](https://www.glyphrstudio.com/blog/) |
-| | |
 | Mastodon | [@glyphrstudio@typo.social](https://typo.social/@glyphrstudio) |
 | Reddit | [reddit.com/r/GlyphrStudio](https://www.reddit.com/r/GlyphrStudio/) |
-| Twitter | [@glyphrstudio](https://twitter.com/glyphrstudio) |
 | GitHub | [github.com/glyphr-studio](https://github.com/glyphr-studio) |
 
 ## License
